@@ -1,0 +1,1 @@
+export const stockImages = ["/assets/png/home/img-1.png", "/assets/png/home/img-2.png", "/assets/png/home/img-3.png"]
