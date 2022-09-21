@@ -50,7 +50,7 @@ export default function Home() {
       <div className='max-w-[40%] w-full h-full absolute right-0 z-0'>
         <ImageSlider
           pictures={stockImages}
-          iterations={4}
+          iterations={2}
         />
       </div>
     </div>

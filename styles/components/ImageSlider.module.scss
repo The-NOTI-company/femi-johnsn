@@ -6,7 +6,7 @@
 
     .slider{
         height: 100%;
-        animation: marquee 30s linear infinite;
+        animation: marquee 10s linear infinite;
 
         .slide{
             margin: 24px 0;
@@ -21,6 +21,6 @@
       transform: translate(0, 0);
     }
     100% {
-      transform: translate(0, -100%);
+      transform: translate(0, -181%);
     }
 }
