@@ -1,25 +1,18 @@
-import Head from 'next/head'
-import Footer from '../../components/footer/index'
+import Layout from '../../components/layouts'
 import styles from '../../styles/pages/Photography.module.scss'
 
 function Photography() {
     return (
-        <div className={styles.container}>
-            <Head>
-                <title>Photography | Femi Johnsn</title>
-                <meta name="description" content="Portfolio for Femi Johnsn" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-            <div>
-                <nav>
+        <Layout
+            className={styles.container}
+            title="Photography"
+            showSubFooter={true}
+            isNavDark={true}
+        >
+            <section>
 
-                </nav>
-                <main>
-
-                </main>
-                <Footer showSubFooter={true}/>
-            </div>
-        </div>
+            </section>
+        </Layout>
     )
 }
 

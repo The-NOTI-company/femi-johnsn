@@ -10,7 +10,7 @@ const Footer = ({ showSubFooter }) => {
                 (
                     <div className="w-fit self-end">
                         <div className="flex pb-[45px] border-b-2 border-b-white">
-                            <h1 className="text-secondary text-display-2 uppercase font-bold mr-[50px]">Make Magic</h1>  
+                            <h1 className="text-secondary text-display-2 uppercase font-bold mr-[50px]">Make Magic</h1>
                             <Image src={"/assets/svg/footer/arrow-right.svg"} alt="arrow" width={106.51} height={70.12} />
                         </div>
                         <div className="flex mt-32 mb-64">
