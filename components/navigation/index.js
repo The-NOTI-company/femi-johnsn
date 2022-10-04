@@ -22,9 +22,15 @@ const Navigation = ({isNavDark}) => {
                 )
             }
         >
-            <div className="flex justify-between items-center py-8 max-w-[85%] mx-auto w-full">
+            <div className="flex justify-between items-center py-8 px-[15%] mx-auto w-full fixed top-0 z-20">
                 <div>
-                    <Image src={"/assets/svg/navigation/logo.svg"} alt="Femi Johnsn" width={42} height={42} />
+                    <Image
+                        className={ classNames( "duration-300", showLightBg && "invert")}
+                        src={"/assets/svg/navigation/logo.svg"}
+                        alt="Femi Johnsn"
+                        width={42}
+                        height={42}
+                    />
                 </div>
                 <button className={styles["menu-btn"]} onClick={toggleMenu}>
                     <h4 className={
@@ -44,7 +50,7 @@ const Navigation = ({isNavDark}) => {
                         )
                     }>
                         <div className={ classNames(styles['bar'], styles['bar-1']) }></div>
-                        <div className={ classNames(styles['bar'], styles['bar-2'], "my-1") }></div>
+                        <div className={ classNames(styles['bar'], styles['bar-2'], "my-[6px]") }></div>
                         <div className={ classNames(styles['bar'], styles['bar-3']) }></div>
                     </div>
                 </button>
@@ -58,7 +64,7 @@ const Navigation = ({isNavDark}) => {
                     )
                 }
             >
-                <div className="flex justify-around w-full px-[10%] mt-20">
+                <div className="flex justify-around w-full px-[10%] mt-40">
                     <div className="block max-w-[379px] w-full">
                         <Image
                             width={379}

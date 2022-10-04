@@ -29,20 +29,22 @@
         }
     
         .bar-1{
-            width: 12px;
+            width: 11px;
             align-self: flex-end;
+            margin-right: 0.1rem;
         }
     
         .bar-3{
-            width: 12px;
+            width: 11px;
             align-self: flex-start;
+            margin-left: 0.1rem;
         }
     }
 
     .show-menu{
         .bar-1{
             width: 18px;
-            transform: rotateZ(46deg) translateX(8px);
+            transform: rotateZ(46deg) translateX(12px);
         }
         
         .bar-2{
@@ -51,7 +53,7 @@
 
         .bar-3{
             width: 18px;
-            transform: rotateZ(-47deg) translateX(8px);
+            transform: rotateZ(-47deg) translateX(9px);
         }
     }
 
