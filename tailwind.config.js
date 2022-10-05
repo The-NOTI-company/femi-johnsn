@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         'body': ["'Barlow Semi Condensed'", "san-serif"],
         'cursive': ["'Uncial Antiqua'", "cursive"],
+        'story': ["'Henny Penny'", "cursive"]
       },
       fontSize: {
         'display-1': ['122px', '161px'],
