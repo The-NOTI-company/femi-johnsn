@@ -1,8 +1,9 @@
 import Navigation from "../../navigation";
 import Footer from "../../footer";
 import SeoHead from "../../seo-head";
+import SpinningLogo from "../../spinning-logo";
 
-export default function DefaultLayout({ className, title, description, children, showSubFooter, isNavDark }){
+export default function DefaultLayout({ className, title, description, children, showSubFooter, isNavDark, spinningLogoClassName }){
     return (
         <div className={className}>
             <SeoHead
@@ -14,8 +15,9 @@ export default function DefaultLayout({ className, title, description, children,
                     isNavDark={isNavDark}
                 />
                 <main className="mt-[111px]">
-                    { children }
+                    {children}
                 </main>
+                <SpinningLogo className={spinningLogoClassName} />
                 <Footer
                     showSubFooter={showSubFooter}
                 />

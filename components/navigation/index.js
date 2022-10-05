@@ -22,7 +22,7 @@ const Navigation = ({isNavDark}) => {
                 )
             }
         >
-            <div className="flex justify-between items-center py-8 px-[15%] mx-auto w-full fixed top-0 z-20">
+            <div className="flex justify-between items-center py-8 px-[8%] mx-auto w-full fixed top-0 z-20">
                 <div>
                     <Image
                         className={ classNames( "duration-300", showLightBg && "invert")}
