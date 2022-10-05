@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from '../../../styles/components/LinearImageSlider.module.scss'
+import styles from '../../../styles/components/ReelImageSlider.module.scss'
 import { classNames } from '../../../utils/classNames'
 
-function LinearImageSlider({ pictures, iterations, speed, className }) {
+function ReelImageSlider({ pictures, iterations, direction, className }) {
 
     function replicateArray(array, n) {
         var arrays = Array.apply(null, new Array(n));
@@ -13,8 +13,8 @@ function LinearImageSlider({ pictures, iterations, speed, className }) {
     const imgArray = replicateArray(pictures, iterations);
 
     return (
-        <div className={ classNames(styles.container, className)} style={{animationDuration: `${speed}s`}} >
-            <div className={styles.slider}>
+        <div className={ classNames(styles.container, className)} >
+            <div className={styles.slider} style={{ animationDirection: `${direction}` }}>
                 {imgArray.map((img, idx) => (
                     <div className={styles.slide} key={idx}>
                         <img src={img} alt="slide" />
@@ -25,4 +25,4 @@ function LinearImageSlider({ pictures, iterations, speed, className }) {
     );
 }
 
-export default LinearImageSlider
+export default ReelImageSlider

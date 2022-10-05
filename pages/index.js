@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/pages/Home.module.scss'
-import { stockImages } from '../utils/homepageSlider'
+import { homepageImages } from '../utils/constants'
 import ImageSlider from '../components/image-slider'
 
 export default function Home() {
@@ -49,7 +49,7 @@ export default function Home() {
       </div>
       <div className='max-w-[40%] w-full h-full absolute right-0 z-0'>
         <ImageSlider
-          pictures={stockImages}
+          pictures={homepageImages}
           iterations={2}
         />
       </div>

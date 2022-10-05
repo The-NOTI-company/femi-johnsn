@@ -2,26 +2,15 @@ import { useEffect, useRef } from 'react'
 import DefaultLayout from '../../components/layouts/default-layout'
 import styles from '../../styles/pages/Photography.module.scss'
 import { classNames } from '../../utils/classNames'
-import LinearImageSlider from '../../components/image-slider/linear-image-slider'
-import { photosArrayOne, photosArrayThree, photosArrayTwo } from '../../utils/photographySlider'
+import { photographyReel } from '../../utils/constants'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+import GalleryReel from '../../components/photography/gallery-reel'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const Gallery = () => {
-    return (
-        <div className='-rotate-[25deg] -translate-y-[320px] -translate-x-[320px] flex gap-[24px] min-w-[150%] h-[100vh]'>
-            <LinearImageSlider pictures={photosArrayOne} iterations={2} className="h-[200vh]" />
-            <LinearImageSlider pictures={photosArrayThree} iterations={2} className="h-[200vh] mt-6" />
-            <LinearImageSlider pictures={photosArrayTwo} iterations={2} className="h-[200vh] mt-9" />
-            <LinearImageSlider pictures={photosArrayOne} iterations={2} className="h-[200vh] mt-12" />
-        </div>
-    )
-}
 
 function Photography() {
-
     const galleryContainer = useRef()
     const headerTitles = useRef()
 
@@ -78,7 +67,9 @@ function Photography() {
                     <h1 className='font-cursive text-display-1 whitespace-nowrap -translate-x-[60%]' id='title-2'>CREATIVE DIRECTION  |  EXHIBITION</h1>
                 </div>
                 <div ref={galleryContainer} className={ classNames(styles["gallery-container"], 'overflow-hidden mt-10')}>
-                    <Gallery/>
+                    <GalleryReel
+                        photographyReel={photographyReel}
+                    />
                 </div>
                 <div className='flex justify-between text-secondary mt-[336px] mb-[304px]'>
                     <h6 className='font-cursive text-display-7'>Intro</h6>
