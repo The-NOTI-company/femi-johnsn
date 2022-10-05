@@ -4,7 +4,6 @@ const nextConfig = {
   swcMinify: true,
 }
 
-module.exports = nextConfig
 
 module.exports = {
   webpack(config) {
@@ -14,11 +13,11 @@ module.exports = {
     });
 
     return config;
-  }
-};
-
-module.exports = {
+  },
   images: {
     unoptimized: true,
   },
-}
+};
+
+module.exports = nextConfig
+
