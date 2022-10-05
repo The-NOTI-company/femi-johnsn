@@ -7,7 +7,7 @@ const SpinningLogo = ({className}) => {
     return (
         <div className={
                 classNames(
-                    "fixed w-full max-w-[164.71px] cursor-pointer hover:scale-75 duration-200",
+                    "fixed w-full max-w-[164.71px] cursor-pointer hover:scale-75 duration-200 z-[4]",
                     className
                 )
             }

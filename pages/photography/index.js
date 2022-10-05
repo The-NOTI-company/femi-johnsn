@@ -2,10 +2,14 @@ import { useEffect, useRef } from 'react'
 import DefaultLayout from '../../components/layouts/default-layout'
 import styles from '../../styles/pages/Photography.module.scss'
 import { classNames } from '../../utils/classNames'
-import { photographyReel } from '../../utils/constants'
+import { photographyReel, photosPreview } from '../../utils/constants'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import GalleryReel from '../../components/photography/gallery-reel'
+import SocialLink from '../../components/photography/social-link'
+import PreviewLink from '../../components/photography/preview-link'
+import ArrowStory from '../../components/photography/arrow-story'
+
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -37,20 +41,28 @@ function Photography() {
         })
     })
 
-    const SocialLink = ({ text, link }) => {
-        return (
-            <li className='mr-6 group'>
-                <a href={link} className="flex items-center" target="_blank" rel="noreferrer">
-                    <p className='text-caption text-secondary mr-2'>{text}</p>
-                    <div className='group-hover:translate-x-1 duration-200'>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.7817 7.33336L7.20566 3.75736L8.14833 2.8147L13.3337 8.00003L8.14833 13.1854L7.20566 12.2427L10.7817 8.6667H2.66699V7.33336H10.7817Z" fill="#F0F9F1"/>
-                        </svg>
-                    </div>
-                </a>
-            </li>
-        )
-    }
+    const renderPreview = () => (
+        photosPreview.map((pic) => {
+            if (pic.isLink) {
+                return (
+                    <PreviewLink
+                        key={pic.id}
+                        picData={pic}
+                    />
+                )
+            }
+
+            return (
+                <ArrowStory
+                    key={pic.id}
+                    title={pic.title}
+                    className={pic.className}
+                />
+            )
+        })
+    
+    )
+
     
 
     return (
@@ -97,7 +109,9 @@ function Photography() {
             </section>
             <section className='mt-[80px] mb-[176px]'>
                 <h3 className={ classNames('text-display-3 font-cursive text-secondary ml-[6%]', styles["home-gallery-title"] )}>It’s all bout the eyes</h3>
-
+                <div className='grid grid-cols-3 gap-[22px] mt-[168px] ml-[4%] mr-[7%]'>
+                    { renderPreview() }
+                </div>
             </section>
             <section className='mx-[75px]'>
                 <h3 className='text-display-3 font-cursive text-secondary uppercase'>Featured in</h3>

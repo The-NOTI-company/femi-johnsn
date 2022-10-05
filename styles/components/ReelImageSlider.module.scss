@@ -30,7 +30,7 @@ $anim-duration: 65s;
     transform: translate(0, 0);
   }
   100% {
-    // Multiply the $anim-duration by 1.891 to get accurate translateY % 
+    // Multiply the $anim-duration by 1.891 to get an estimate translateY % 
     transform: translate(0, -122.95%);
   }
 }
