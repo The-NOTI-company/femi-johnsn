@@ -2,13 +2,15 @@ import { useEffect, useRef } from 'react'
 import DefaultLayout from '../../components/layouts/default-layout'
 import styles from '../../styles/pages/Photography.module.scss'
 import { classNames } from '../../utils/classNames'
-import { photographyReel, photosPreview } from '../../utils/constants'
+import { featuredJobs, photographyReel, photosPreview } from '../../utils/constants'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import GalleryReel from '../../components/photography/gallery-reel'
 import SocialLink from '../../components/photography/social-link'
 import PreviewLink from '../../components/photography/preview-link'
 import ArrowStory from '../../components/photography/arrow-story'
+import Link from 'next/link'
+import FeaturedPost from '../../components/photography/featured-post'
 
 
 gsap.registerPlugin(ScrollTrigger)
@@ -56,7 +58,7 @@ function Photography() {
                 <ArrowStory
                     key={pic.id}
                     title={pic.title}
-                    className={pic.className}
+                    alternateArrow={pic.alternate}
                 />
             )
         })
@@ -107,16 +109,40 @@ function Photography() {
                     </div>
                 </div>
             </section>
-            <section className='mt-[80px] mb-[176px]'>
+            <section className='flex flex-col mt-[80px] mb-[176px]'>
                 <h3 className={ classNames('text-display-3 font-cursive text-secondary ml-[6%]', styles["home-gallery-title"] )}>It’s all bout the eyes</h3>
                 <div className='grid grid-cols-3 gap-[22px] mt-[168px] ml-[4%] mr-[7%]'>
                     { renderPreview() }
                 </div>
+                <div className='font-body uppercase self-center'>
+                    <Link href="/photography/all">
+                        <div className='relative cursor-pointer'>
+                            <div className="w-[320px] h-[320px] absolute flex hover:opacity-0 duration-300 rounded-full border-[3px] border-accent bg-primary">
+                                <p className="m-auto text-center text-accent text-base-big">Traverse</p>
+                            </div>
+                            <div className="w-[320px] h-[320px] flex rounded-full bg-accent">
+                                <p className="m-auto text-center text-secondary text-base-big">See more</p>
+                            </div>
+                        </div>
+                    </Link>
+                </div>
             </section>
-            <section className='mx-[75px]'>
+            <section className='mx-[75px] mb-96'>
                 <h3 className='text-display-3 font-cursive text-secondary uppercase'>Featured in</h3>
-
-
+                <div className='flex my-[86px] ml-[5%]'>
+                    {
+                        featuredJobs.map((job) => {
+                            return (
+                                <FeaturedPost
+                                    key={job.id}
+                                    name={job.name}
+                                    postSrc={job.postSrc}
+                                    logoSrc={job.logoSrc}
+                                />
+                            )
+                        })
+                    }
+                </div>
             </section>
         </DefaultLayout>
     )

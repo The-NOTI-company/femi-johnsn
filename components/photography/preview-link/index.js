@@ -9,10 +9,10 @@ const PreviewLink = ({ picData }) => {
         <div className={
             classNames("group cursor-pointer mb-44", className)
         }>
-            <Link href={`/photography/work/${name}`}> 
+            <Link href={`/photography/all/${name}`}> 
                 <div className="w-full">
                     <div className="w-full relative">
-                        <img className="hover:opacity-5 duration-500 w-full absolute h-full object-cover" src={initialImg} alt={title} />
+                        <img className="hover:opacity-5 duration-700 w-full absolute h-full object-cover" src={initialImg} alt={title} />
                         <img className="object-cover w-full" src={hoverImg} alt={title}/>
                     </div>
                     <div className="mt-16 mb-5">

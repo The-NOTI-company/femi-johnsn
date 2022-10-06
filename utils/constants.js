@@ -25,7 +25,7 @@ export const photosPreview = [
         id: 1,
         isLink: false,
         title: "ONCE UPON A TIME",
-        className: ""
+        alternate: false
     },
     {
         id: 2,
@@ -43,7 +43,7 @@ export const photosPreview = [
         isLink: true,
         title: "SOUR",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997230/Projects/Femi%20Johnsn/manipulations/sour_ztddti.png",
-        hoverImg: "https://res.cloudinary.com/noticompany/image/upload/v1664929630/Projects/Femi%20Johnsn/shoots/_DSC_75sour_l3mklk.jpg",
+        hoverImg: "https://res.cloudinary.com/noticompany/image/upload/v1664929642/Projects/Femi%20Johnsn/shoots/_DSC_41sour_wzomht.jpg",
         roles: ["Creative Direction","Photography"],
         className: "border-b-2 border-b-secondary"
     },
@@ -71,13 +71,13 @@ export const photosPreview = [
         id: 6,
         isLink: false,
         title: "THE SPARKS IN THEIR EYES",
-        className: "rotate-[70.11deg]"
+        alternate: true
     },
     {
         id: 7,
         isLink: false,
         title: "LIT THE SCENERY & THE EVENING CANDLES",
-        className: ""
+        alternate: false
     },
     {
         id: 8,
@@ -85,7 +85,7 @@ export const photosPreview = [
         isLink: true,
         title: "THUG TENET",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997261/Projects/Femi%20Johnsn/manipulations/tt_yrbhbc.png",
-        hoverImg: "https://res.cloudinary.com/noticompany/image/upload/v1664998063/Projects/Femi%20Johnsn/shoots/DSC_0096-min_uovhib.jpg",
+        hoverImg: "https://res.cloudinary.com/noticompany/image/upload/v1664985834/Projects/Femi%20Johnsn/shoots/DSC_0116-min_s854yj.jpg",
         roles: ["Creative Direction"],
         className: ""
     },
@@ -118,5 +118,26 @@ export const photosPreview = [
         hoverImg: "https://res.cloudinary.com/noticompany/image/upload/v1664998657/Projects/Femi%20Johnsn/shoots/IMG_1707_xccydb.jpg",
         roles: ["Creative Direction"],
         className: "border-b-2 border-b-secondary"
+    },
+]
+
+export const featuredJobs = [
+    {
+        id: 1,
+        name: "Malvie",
+        postSrc: "/assets/png/photography/malvie.png",
+        logoSrc: "/assets/svg/photography/malvie-logo.svg"
+    },
+    {
+        id: 2,
+        name: "Radr Africa",
+        postSrc: "/assets/png/photography/radr.png",
+        logoSrc: "/assets/svg/photography/radr-logo.svg"
+    },
+    {
+        id: 3,
+        name: "Heart You",
+        postSrc: "/assets/png/photography/heart-you.png",
+        logoSrc: "/assets/svg/photography/heart-you-logo.svg"
     },
 ]
