@@ -16,7 +16,7 @@ const PreviewLink = ({ picData }) => {
                         <img className="object-cover w-full" src={hoverImg} alt={title}/>
                     </div>
                     <div className="mt-16 mb-5">
-                        <h4 className="text-heading-4 uppercase font-bold text-secondary">{title}</h4>
+                        <h4 className="text-heading-4 uppercase font-bold text-secondary tracking-widest">{title}</h4>
                         <div className="text-base text-secondary my-3 font-normal">
                             { roles?.join(" | ") }
                         </div>
