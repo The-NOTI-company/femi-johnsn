@@ -1,17 +1,16 @@
-import Image from "next/image"
+/* eslint-disable @next/next/no-img-element */
 
 
-const Footer = ({ showSubFooter }) => {
-    
+function Footer({ showSubFooter }) {
+
     return (
         <footer className="flex flex-col mx-auto w-full font-body max-w-[75%] mt-[15%]">
-            { 
-                showSubFooter &&
+            {showSubFooter &&
                 (
                     <div className="w-fit self-end">
                         <div className="flex pb-[45px] border-b-2 border-b-white">
                             <h1 className="text-secondary text-display-2 uppercase font-bold mr-[50px]">Make Magic</h1>
-                            <Image src={"/assets/svg/footer/arrow-right.svg"} alt="arrow" width={106.51} height={70.12} />
+                            <img src={"/assets/svg/footer/arrow-right.svg"} alt="arrow" />
                         </div>
                         <div className="flex mt-32 mb-64">
                             <div className="text-secondary pr-[15%]">
@@ -34,10 +33,9 @@ const Footer = ({ showSubFooter }) => {
                                     femijohnsnn@gmail.com
                                 </a>
                             </div>
-                        </div>    
+                        </div>
                     </div>
-                )
-            }
+                )}
             <div className="border-t-2 border-t-white">
                 <p className="text-secondary text-base-big py-9">Femi Johnsn © 2022</p>
             </div>

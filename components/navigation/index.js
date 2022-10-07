@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import { useState } from "react"
 import Link from "next/link"
-import Image from "next/image"
 import styles from '../../styles/components/Navigation.module.scss'
 import { classNames } from '../../utils/classNames'
 
@@ -24,12 +24,10 @@ const Navigation = ({isNavDark}) => {
         >
             <div className="flex justify-between items-center py-8 px-[8%] mx-auto w-full fixed top-0 z-30">
                 <div>
-                    <Image
-                        className={ classNames( "duration-300", showLightBg && "invert")}
+                    <img
+                        className={ classNames( "duration-300 w-full max-w-[42px]", showLightBg && "invert")}
                         src={"/assets/svg/navigation/logo.svg"}
                         alt="Femi Johnsn"
-                        width={42}
-                        height={42}
                     />
                 </div>
                 <button className={styles["menu-btn"]} onClick={toggleMenu}>
@@ -66,11 +64,8 @@ const Navigation = ({isNavDark}) => {
             >
                 <div className="flex justify-around w-full px-[10%] mt-40">
                     <div className="block max-w-[379px] w-full">
-                        <Image
-                            width={379}
-                            height={520.52}
-                            className="block h-full"
-                            layout="responsive"
+                        <img
+                            className="block w-full max-w-[379px]"
                             src={"/assets/png/navigation/navbar-img.png"}
                             alt="A model"
                         />

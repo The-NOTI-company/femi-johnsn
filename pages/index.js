@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/pages/Home.module.scss'
 import { homepageImages } from '../utils/constants'
@@ -28,8 +28,8 @@ export default function Home() {
                 <Link href="/contact">Contact</Link>
               </li>
             </ul>
-            <div className='ml-[-70px]'>
-              <Image src="/assets/svg/navigation/arrow.svg" width={67} height={67} alt="Arrow"/>
+            <div className='ml-[-70px] max-w-[67px]'>
+              <img src="/assets/svg/navigation/arrow.svg" className="w-full" alt="Arrow"/>
             </div>
           </nav>
           <header className='w-2/5 mx-[65px]'>
@@ -38,7 +38,7 @@ export default function Home() {
             </div>
             <div className='flex w-4/5 justify-between'>
               <p className='font-body text-white mt-[22px]'>Art, Eyes, Music & Women</p>
-              <Image src="/assets/svg/home/smiley.svg" className='self-end mt-10' width={80} height={80} alt="Arrow"/>
+              <img src="/assets/svg/home/smiley.svg" className='self-end mt-10 max-w-[80px]' alt="Smiley"/>
             </div>
           </header>
         </main>
