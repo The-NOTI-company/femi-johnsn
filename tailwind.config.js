@@ -60,7 +60,15 @@ module.exports = {
         'neutral-8': '#000000',
       },
     },
-    
+    screens: {
+      'tablet': '640px',
+
+      'laptop': '1024px',
+
+      'desktop': '1280px',
+
+      "breakpoint-i": "1200px",
+    }
   },
   plugins: [],
 }
