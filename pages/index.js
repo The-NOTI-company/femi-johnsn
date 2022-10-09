@@ -10,14 +10,14 @@ import { classNames } from '../utils/classNames'
 export default function Home() {
 
   return (
-    <>
+    <div>
+      <Head>
+        <title>Home | Femi Johnsn</title>
+        <meta name="description" content="Portfolio for Femi Johnsn" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <MobileView/>
-      <div className={ classNames( "hidden breakpoint-i:block", styles.container)}>
-        <Head>
-          <title>Home | Femi Johnsn</title>
-          <meta name="description" content="Portfolio for Femi Johnsn" />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
+      <div className={ classNames( "hidden breakpoint-i:flex", styles.container)}>
         <div className='font-body max-w-[75%] pt-7 pb-[23px] z-10'>
           <main className='flex flex-col '>
             <nav className='text-white self-end w-fit'>
@@ -58,7 +58,6 @@ export default function Home() {
           />
         </div>
       </div>
-    </>
-    
+    </div>
   )
 }
