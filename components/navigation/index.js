@@ -4,7 +4,7 @@ import Link from "next/link"
 import styles from '../../styles/components/Navigation.module.scss'
 import { classNames } from '../../utils/classNames'
 
-const Navigation = ({isNavDark}) => {
+const Navigation = ({ isNavDark, invertMenuColours=false }) => {
     const [showMenu, setShowMenu] = useState(false)
 
     const toggleMenu = () => {
@@ -22,7 +22,7 @@ const Navigation = ({isNavDark}) => {
                 )
             }
         >
-            <div className="flex justify-between items-center py-8 px-[8%] mx-auto w-full fixed top-0 z-30">
+            <div className={ classNames("flex justify-between items-center py-8 px-[8%] mx-auto w-full fixed top-0 z-30 duration-500", invertMenuColours &&  "invert" )}>
                 <div>
                     <img
                         className={ classNames( "duration-300 w-full max-w-[42px]", showLightBg && "invert")}
@@ -56,7 +56,7 @@ const Navigation = ({isNavDark}) => {
             <div className={
                     classNames(
                         styles["menu"],
-                        "h-full w-full fixed -translate-y-[200%]",
+                        "h-full w-full fixed -translate-y-[200%] duration-700",
                         showLightBg ? "bg-secondary" : "bg-primary",
                         showMenu && "translate-y-0"
                     )
@@ -88,7 +88,7 @@ const Navigation = ({isNavDark}) => {
                                 <Link href="/">About</Link>
                             </li>
                             <li className="text-heading-1 font-semibold">
-                                <Link href="/">Contact</Link>
+                                <Link href="/contact">Contact</Link>
                             </li>
                         </ul>
                         <ul className="mb-16">
