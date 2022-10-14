@@ -5,7 +5,7 @@ import SpinningLogo from "../../spinning-logo";
 import MobileView from "../../mobile-view";
 import { classNames } from "../../../utils/classNames";
 
-export default function DefaultLayout({ className, title, description, children, showSubFooter, isNavDark, spinningLogoClassName }){
+export default function DefaultLayout({ className, title, description, children, showSubFooter, isNavDark, invertMenuColours, spinningLogoClassName }){
     return (
         <>
             <MobileView />
@@ -17,10 +17,11 @@ export default function DefaultLayout({ className, title, description, children,
                 <div>
                     <Navigation
                         isNavDark={isNavDark}
+                        invertMenuColours={invertMenuColours}
                     />
-                    <main className="mt-[111px]">
+                    <>
                         {children}
-                    </main>
+                    </>
                     <SpinningLogo className={spinningLogoClassName} />
                     <Footer
                         showSubFooter={showSubFooter}
