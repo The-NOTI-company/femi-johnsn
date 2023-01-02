@@ -50,6 +50,7 @@ function Photography() {
                     <PreviewLink
                         key={pic.id}
                         picData={pic}
+                        borderBottom = {true}
                     />
                 )
             }

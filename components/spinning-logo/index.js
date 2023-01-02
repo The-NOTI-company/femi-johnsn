@@ -12,7 +12,7 @@ const SpinningLogo = ({className}) => {
                 )
             }
         >
-            <Link href="/work">
+            <Link href="/photography/all">
                 <div className="relative">
                     <div className="w-full max-w-[64px] absolute top-[50px] left-[51px]">
                         <img

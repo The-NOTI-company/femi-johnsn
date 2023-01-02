@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import { useState } from "react"
 import Link from "next/link"
+import { useRouter } from 'next/router'
 import styles from '../../styles/components/Navigation.module.scss'
 import { classNames } from '../../utils/classNames'
 
-const Navigation = ({ isNavDark, invertMenuColours=false }) => {
+const Navigation = ({ isNavDark, invertMenuColours=false, showBackButton=false }) => {
     const [showMenu, setShowMenu] = useState(false)
 
     const toggleMenu = () => {
@@ -12,6 +13,7 @@ const Navigation = ({ isNavDark, invertMenuColours=false }) => {
     }
 
     const showLightBg = showMenu && isNavDark
+    const router = useRouter()
 
     return (
         <nav className={
@@ -22,18 +24,33 @@ const Navigation = ({ isNavDark, invertMenuColours=false }) => {
                 )
             }
         >
-            <div className={ classNames("flex justify-between items-center py-8 px-[8%] mx-auto w-full fixed top-0 z-30 duration-500", invertMenuColours &&  "invert" )}>
+            <div className={ classNames("flex justify-between items-center py-8 px-[8%] mx-auto w-full fixed top-0 z-30 duration-500 mix-blend-difference", invertMenuColours &&  "invert" )}>
                 <div>
-                    <img
-                        className={ classNames( "duration-300 w-full max-w-[42px]", showLightBg && "invert")}
-                        src={"/assets/svg/navigation/logo.svg"}
-                        alt="Femi Johnsn"
-                    />
+                    {
+                        showBackButton ?
+                            (
+                                <button onClick={router.back} className="flex items-center">
+                                    <img
+                                        src={"/assets/svg/navigation/back-icon.svg"}
+                                        alt="Back"    
+                                    /> 
+                                    <p className="text-heading-6 ml-3 text-secondary">Back</p>
+                                </button>
+                            )
+                        :
+                            (
+                                <img
+                                    className={ classNames( "duration-300 w-full max-w-[42px]", showLightBg && "invert")}
+                                    src={"/assets/svg/navigation/logo.svg"}
+                                    alt="Femi Johnsn"
+                                />    
+                            )
+                    }
                 </div>
                 <button className={styles["menu-btn"]} onClick={toggleMenu}>
                     <h4 className={
                             classNames(
-                                "text-white mr-[19px] text-base",
+                                "text-white mr-[19px] text-base font-light",
                                 showLightBg && "text-primary"
                             )
                         }
@@ -82,7 +99,7 @@ const Navigation = ({ isNavDark, invertMenuColours=false }) => {
                                 <Link href="/">Home</Link>
                             </li>
                             <li className="text-heading-1 font-semibold mb-8">
-                                <Link href="/">Work</Link>
+                                <Link href="/photography/all">Work</Link>
                             </li>
                             <li className="text-heading-1 font-semibold mb-8">
                                 <Link href="/">About</Link>

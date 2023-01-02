@@ -37,7 +37,7 @@ function Footer({ showSubFooter }) {
                     </div>
                 )}
             <div className="border-t-2 border-t-white">
-                <p className="text-secondary text-base-big py-9">Femi Johnsn © 2022</p>
+                <p className="text-secondary text-base-big py-9">Femi Johnsn © 2023</p>
             </div>
         </footer>
     )

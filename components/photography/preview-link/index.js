@@ -2,12 +2,12 @@
 import { classNames } from "../../../utils/classNames"
 import Link from "next/link"
 
-const PreviewLink = ({ picData }) => {
+const PreviewLink = ({ picData, borderBottom }) => {
     const { name, title, initialImg, hoverImg, roles, className } = picData
 
     return (
         <div className={
-            classNames("group cursor-pointer mb-44", className)
+            classNames("group cursor-pointer mb-44", className, borderBottom && "border-b-2 border-b-secondary")
         }>
             <Link href={`/photography/all/${name}`}> 
                 <div className="w-full">
