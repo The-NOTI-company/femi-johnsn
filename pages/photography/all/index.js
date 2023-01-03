@@ -13,7 +13,7 @@ export default function AllPhotos() {
             title="All Photos"
             showSubFooter={true}
             isNavDark={true}
-            showBackButton={true}
+            backButtonDestination={"/photography"}
             spinningLogoClassName="hidden"
         >
             <main className="flex mt-[111px] mx-[9%]">
@@ -52,6 +52,7 @@ export default function AllPhotos() {
                                         <PreviewLink
                                             key={pic.id}
                                             picData={pic}
+                                            imgClassName={"aspect-square"}
                                         />
                                     )
                                 }

@@ -5,7 +5,7 @@ import SpinningLogo from "../../spinning-logo";
 import MobileView from "../../mobile-view";
 import { classNames } from "../../../utils/classNames";
 
-export default function DefaultLayout({ className, title, description, children, showSubFooter, isNavDark, showBackButton, invertMenuColours, setMixBlend, spinningLogoClassName }){
+export default function DefaultLayout({ className, title, description, children, showSubFooter, isNavDark, backButtonDestination, invertMenuColours, setMixBlend, spinningLogoClassName }){
     return (
         <>
             <MobileView />
@@ -16,7 +16,7 @@ export default function DefaultLayout({ className, title, description, children,
                 />
                 <div>
                     <Navigation
-                        showBackButton={showBackButton}
+                        backButtonDestination={backButtonDestination}
                         isNavDark={isNavDark}
                         invertMenuColours={invertMenuColours}
                         setMixBlend={setMixBlend}

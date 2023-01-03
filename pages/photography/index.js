@@ -50,7 +50,8 @@ function Photography() {
                     <PreviewLink
                         key={pic.id}
                         picData={pic}
-                        borderBottom = {true}
+                        borderBottom={true}
+                        containerClassName={"mb-44"}
                     />
                 )
             }

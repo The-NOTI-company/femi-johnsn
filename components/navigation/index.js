@@ -1,11 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import { useState } from "react"
 import Link from "next/link"
-import { useRouter } from 'next/router'
 import styles from '../../styles/components/Navigation.module.scss'
 import { classNames } from '../../utils/classNames'
 
-const Navigation = ({ isNavDark, invertMenuColours=false, showBackButton=false, setMixBlend=false }) => {
+const Navigation = ({ isNavDark, invertMenuColours=false, backButtonDestination="", setMixBlend=false }) => {
     const [showMenu, setShowMenu] = useState(false)
 
     const toggleMenu = () => {
@@ -13,7 +12,6 @@ const Navigation = ({ isNavDark, invertMenuColours=false, showBackButton=false, 
     }
 
     const showLightBg = showMenu && isNavDark
-    const router = useRouter()
 
     return (
         <nav className={
@@ -27,15 +25,18 @@ const Navigation = ({ isNavDark, invertMenuColours=false, showBackButton=false, 
             <div className={ classNames("flex justify-between items-center py-8 px-[8%] mx-auto w-full fixed top-0 z-30 duration-500 ", invertMenuColours &&  "invert", setMixBlend && "mix-blend-difference" )}>
                 <div>
                     {
-                        showBackButton ?
+                        backButtonDestination ?
                             (
-                                <button onClick={router.back} className="flex items-center">
-                                    <img
-                                        src={"/assets/svg/navigation/back-icon.svg"}
-                                        alt="Back"    
-                                    /> 
-                                    <p className="text-heading-6 ml-3 text-secondary">Back</p>
-                                </button>
+                                <Link href={`${backButtonDestination}`}>
+                                    <div className="flex items-center cursor-pointer group">
+                                        <img
+                                            className="duration-200 group-hover:-translate-x-1"
+                                            src={"/assets/svg/navigation/back-icon.svg"}
+                                            alt="Back"    
+                                        /> 
+                                        <p className="text-heading-6 ml-3 text-secondary">Back</p>
+                                    </div>
+                                </Link>
                             )
                         :
                             (
