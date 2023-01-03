@@ -29,7 +29,8 @@ export const photosPreview = [
     },
     {
         id: 2,
-        name:"beautiful-thugger-girl",
+        name: "beautiful-thugger-girl",
+        slug:"beautiful-thugger-girl",
         isLink: true,
         title: "BEAUTIFUL THUGGER GIRL",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997252/Projects/Femi%20Johnsn/manipulations/btg_rm9xhx.png",
@@ -39,7 +40,8 @@ export const photosPreview = [
     },
     {
         id: 3,
-        name:"sour",
+        name: "sour",
+        slug:"sour",
         isLink: true,
         title: "SOUR",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997230/Projects/Femi%20Johnsn/manipulations/sour_ztddti.png",
@@ -49,7 +51,8 @@ export const photosPreview = [
     },
     {
         id: 4,
-        name:"black-and-gold",
+        name: "black-and-gold",
+        slug:"black-and-gold",
         isLink: true,
         title: "BLACK & GOLD",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997230/Projects/Femi%20Johnsn/manipulations/bg_uuv5j8.png",
@@ -59,7 +62,8 @@ export const photosPreview = [
     },
     {
         id: 5,
-        name:"framed",
+        name: "framed",
+        slug:"framed",
         isLink: true,
         title: "FRAMED",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997248/Projects/Femi%20Johnsn/manipulations/framed_lzl8h8.png",
@@ -81,7 +85,8 @@ export const photosPreview = [
     },
     {
         id: 8,
-        name:"thug-tenet",
+        name: "thug-tenet",
+        slug:"thug-tenet",
         isLink: true,
         title: "THUG TENET",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997261/Projects/Femi%20Johnsn/manipulations/tt_yrbhbc.png",
@@ -91,7 +96,8 @@ export const photosPreview = [
     },
     {
         id: 9,
-        name:"lost-butterflies",
+        name: "lost-butterflies",
+        slug:"lost-butterflies",
         isLink: true,
         title: "LOST BUTTERFLIES",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997234/Projects/Femi%20Johnsn/manipulations/lb_iwibil.png",
@@ -101,7 +107,8 @@ export const photosPreview = [
     },
     {
         id: 10,
-        name:"delusional",
+        name: "delusional",
+        slug:"delusional",
         isLink: true,
         title: "DELUSIONAL",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997235/Projects/Femi%20Johnsn/manipulations/delusion_mr4nfq.png",
@@ -111,7 +118,8 @@ export const photosPreview = [
     },
     {
         id: 11,
-        name:"urban-tracker",
+        name: "urban-tracker",
+        slug:"urban-tracker",
         isLink: true,
         title: "URBAN TRACKER",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997255/Projects/Femi%20Johnsn/manipulations/ut_ejtsd3.png",
