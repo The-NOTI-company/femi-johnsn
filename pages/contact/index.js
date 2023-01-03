@@ -11,6 +11,7 @@ export default function Contact() {
             showSubFooter={false}
             isNavDark={false}
             invertMenuColours={false}
+            setMixBlend={true}
             spinningLogoClassName="bottom-12 left-[72px]"
         >
             <main className="bg-secondary pt-[111px]">

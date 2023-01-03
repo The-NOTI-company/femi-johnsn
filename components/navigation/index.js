@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import styles from '../../styles/components/Navigation.module.scss'
 import { classNames } from '../../utils/classNames'
 
-const Navigation = ({ isNavDark, invertMenuColours=false, showBackButton=false }) => {
+const Navigation = ({ isNavDark, invertMenuColours=false, showBackButton=false, setMixBlend=false }) => {
     const [showMenu, setShowMenu] = useState(false)
 
     const toggleMenu = () => {
@@ -24,7 +24,7 @@ const Navigation = ({ isNavDark, invertMenuColours=false, showBackButton=false }
                 )
             }
         >
-            <div className={ classNames("flex justify-between items-center py-8 px-[8%] mx-auto w-full fixed top-0 z-30 duration-500 mix-blend-difference", invertMenuColours &&  "invert" )}>
+            <div className={ classNames("flex justify-between items-center py-8 px-[8%] mx-auto w-full fixed top-0 z-30 duration-500 ", invertMenuColours &&  "invert", setMixBlend && "mix-blend-difference" )}>
                 <div>
                     {
                         showBackButton ?
@@ -102,7 +102,7 @@ const Navigation = ({ isNavDark, invertMenuColours=false, showBackButton=false }
                                 <Link href="/photography/all">Work</Link>
                             </li>
                             <li className="text-heading-1 font-semibold mb-8">
-                                <Link href="/">About</Link>
+                                <Link href="/about">About</Link>
                             </li>
                             <li className="text-heading-1 font-semibold">
                                 <Link href="/contact">Contact</Link>
@@ -119,7 +119,7 @@ const Navigation = ({ isNavDark, invertMenuColours=false, showBackButton=false }
                                 <a href="https://twitter.com/femijohnsn" target="_blank" rel="noreferrer">Twitter</a>
                             </li>
                         </ul>
-                        <p className="text-base">Femi Johnsn, 2022</p>
+                        <p className="text-base">Femi Johnsn, 2023</p>
                     </div>
                 </div>
             </div>
