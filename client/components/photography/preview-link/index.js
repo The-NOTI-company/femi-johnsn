@@ -3,13 +3,13 @@ import { classNames } from "../../../utils/classNames"
 import Link from "next/link"
 
 const PreviewLink = ({ picData, borderBottom, containerClassName="", imgClassName="" }) => {
-    const { name, title, initialImg, hoverImg, roles, className } = picData
+    const { slug, title, initialImg, hoverImg, roles, className } = picData
 
     return (
         <div className={
             classNames("group cursor-pointer", className, borderBottom && "border-b-2 border-b-secondary", containerClassName)
         }>
-            <Link href={`/photography/all/${name}`}> 
+            <Link href={`/photography/all/${slug}`}> 
                 <div className="w-full">
                     <div className="w-full relative">
                         <img className={classNames("hover:opacity-5 duration-700 w-full absolute h-full object-cover" , imgClassName)} src={initialImg} alt={title} />
