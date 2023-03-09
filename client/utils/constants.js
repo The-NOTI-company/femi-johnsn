@@ -30,7 +30,8 @@ export const photosPreview = [
     {
         id: 2,
         name: "beautiful-thugger-girl",
-        slug:"beautiful-thugger-girl",
+        slug: "beautiful-thugger-girl",
+        link: "https://drive.google.com/drive/folders/1e7irVIUUNlEPwUUnvTIx41Q4kMXAjTBx",
         isLink: true,
         title: "BEAUTIFUL THUGGER GIRL",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997252/Projects/Femi%20Johnsn/manipulations/btg_rm9xhx.png",
@@ -41,7 +42,8 @@ export const photosPreview = [
     {
         id: 3,
         name: "sour",
-        slug:"sour",
+        slug: "sour",
+        link: "https://drive.google.com/drive/folders/19JIovo8ktj_2PIgVLHNAQXsePsQnlRIE",
         isLink: true,
         title: "SOUR",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997230/Projects/Femi%20Johnsn/manipulations/sour_ztddti.png",
@@ -63,7 +65,8 @@ export const photosPreview = [
     {
         id: 5,
         name: "framed",
-        slug:"framed",
+        slug: "framed",
+        link: "https://drive.google.com/drive/folders/1bA5tY_5FFKuEoFIRllx2Qv-T-9W3G6b7",
         isLink: true,
         title: "FRAMED",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997248/Projects/Femi%20Johnsn/manipulations/framed_lzl8h8.png",
@@ -86,7 +89,8 @@ export const photosPreview = [
     {
         id: 8,
         name: "thug-tenet",
-        slug:"thug-tenet",
+        slug: "thug-tenet",
+        link: "https://drive.google.com/drive/folders/1ju2wKDNiXcGMq-ALw9i1OCdjMydJPkid",
         isLink: true,
         title: "THUG TENET",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997261/Projects/Femi%20Johnsn/manipulations/tt_yrbhbc.png",
@@ -108,7 +112,8 @@ export const photosPreview = [
     {
         id: 10,
         name: "delusional",
-        slug:"delusional",
+        slug: "delusional",
+        link: "https://drive.google.com/drive/folders/1zZDJLWNERrtV0g3lCxp1EURNeQvW8nGz",
         isLink: true,
         title: "DELUSIONAL",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997235/Projects/Femi%20Johnsn/manipulations/delusion_mr4nfq.png",
@@ -119,7 +124,7 @@ export const photosPreview = [
     {
         id: 11,
         name: "urban-tracker",
-        slug:"urban-tracker",
+        slug: "urban-tracker",
         isLink: true,
         title: "URBAN TRACKER",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997255/Projects/Femi%20Johnsn/manipulations/ut_ejtsd3.png",

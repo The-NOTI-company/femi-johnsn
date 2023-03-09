@@ -28,3 +28,23 @@ a {
   box-sizing: border-box;
 }
 
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+  border-radius: 8px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #00a86a32; 
+  border-radius: 4px;
+  transition: 3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #efefefad; 
+}

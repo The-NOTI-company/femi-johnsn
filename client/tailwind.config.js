@@ -60,6 +60,9 @@ module.exports = {
         'neutral-7': '#050606',
         'neutral-8': '#000000',
       },
+      maxWidth: {
+        'screen': '1550px'
+      }
     },
     screens: {
       'tablet': '640px',

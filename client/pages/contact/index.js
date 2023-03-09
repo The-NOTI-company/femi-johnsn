@@ -32,7 +32,7 @@ export default function Contact() {
                                 </p>
                             </a>
                         </div>
-                        <a href="#" className="text-[7em] leading-[131px] tracking-wider text-primary uppercase font-body font-semibold underline ml-[6%]">
+                        <a href="mailto:femijohnsnn@gmail.com" className="text-[7.5vw] leading-[131px] tracking-wider text-primary uppercase font-body font-semibold underline ml-[6%]">
                             femijohnsnn@gmail.com
                         </a>
                     </div>

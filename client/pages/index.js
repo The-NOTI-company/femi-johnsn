@@ -51,7 +51,7 @@ export default function Home() {
             <h3 className='justify-end'>femi johnsn  | All rights reserved  |  2022</h3>
           </footer>
         </div>
-        <div className='max-w-[40%] w-full h-full absolute right-0 z-0'>
+        <div className='max-w-[40%] w-full h-full absolute right-0 z-0 bottom-0'>
           <ImageSlider
             pictures={homepageImages}
             iterations={2}
