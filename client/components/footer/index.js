@@ -16,20 +16,20 @@ function Footer({ showSubFooter }) {
                             <div className="text-secondary pr-[15%]">
                                 <h4 className="text-heading-4 mb-10">Socials</h4>
                                 <ul>
-                                    <li className="uppercase text-base-semi-bold mb-4">
+                                    <li className="uppercase text-base-semi-bold mb-4 duration-150 hover:text-accent">
                                         <a href="https://www.instagram.com/femijohnsn/?hl=en" target="_blank" rel="noreferrer">Instagram</a>
                                     </li>
-                                    <li className="uppercase text-base-semi-bold mb-4">
+                                    <li className="uppercase text-base-semi-bold mb-4 duration-150 hover:text-accent">
                                         <a href="https://www.behance.net/femijohnsn" target="_blank" rel="noreferrer">Behance</a>
                                     </li>
-                                    <li className="uppercase text-base-semi-bold mb-4">
+                                    <li className="uppercase text-base-semi-bold mb-4 duration-150 hover:text-accent">
                                         <a href="https://twitter.com/femijohnsn" target="_blank" rel="noreferrer">Twitter</a>
                                     </li>
                                 </ul>
                             </div>
                             <div className="text-secondary pr-[15%]">
                                 <h4 className="text-heading-4 mb-10">Say Hello!</h4>
-                                <a href="https://www.instagram.com/femijohnsn/?hl=en" target="_blank" rel="noreferrer" className="text-base-semi-bold">
+                                <a href="mailto:femijohnsnn@gmail.com" target="_blank" rel="noreferrer" className="text-base-semi-bold duration-150 hover:text-accent">
                                     femijohnsnn@gmail.com
                                 </a>
                             </div>

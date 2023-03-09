@@ -32,7 +32,7 @@ export default function Contact() {
                                 </p>
                             </a>
                         </div>
-                        <a href="#" className="text-[7em] leading-[131px] tracking-wider text-primary uppercase font-body font-semibold underline ml-[6%]">
+                        <a href="mailto:femijohnsnn@gmail.com" className="text-[7.5vw] leading-[131px] tracking-wider text-primary uppercase font-body font-semibold underline ml-[6%]">
                             femijohnsnn@gmail.com
                         </a>
                     </div>
@@ -42,13 +42,13 @@ export default function Contact() {
                             <h1 className="text-heading-1 font-semibold mb-[60px]">Socials</h1>
                             <ul>
                                 <li className="text-base-big font-normal uppercase">
-                                    <a href="#">instagram</a>
+                                    <a href="https://www.instagram.com/femijohnsn/" target="_blank" rel="noreferrer" >instagram</a>
                                 </li>
                                 <li className="text-base-big font-normal uppercase my-6">
-                                    <a href="#">behance</a>
+                                    <a href="https://www.behance.net/femijohnsn?tracking_source=search_projects%7Cfemijohnsn" target="_blank" rel="noreferrer" >behance</a>
                                 </li>
                                 <li className="text-base-big font-normal uppercase">
-                                    <a href="#">twitter</a>
+                                    <a href="https://twitter.com/femijohnsn" target="_blank" rel="noreferrer" >twitter</a>
                                 </li>
                             </ul>
                         </div>

@@ -9,12 +9,12 @@ export default function DefaultLayout({ className, title, description, children,
     return (
         <>
             <MobileView />
-            <div className={ classNames( "hidden breakpoint-i:block", className)}>
+            <div className={ classNames( "hidden breakpoint-i:block max-w-screen", className)}>
                 <SeoHead
                     title={title}
                     description={description}
                 />
-                <div>
+                <div className="mx-auto w-full">
                     <Navigation
                         backButtonDestination={backButtonDestination}
                         isNavDark={isNavDark}

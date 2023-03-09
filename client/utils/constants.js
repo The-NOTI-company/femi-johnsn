@@ -30,7 +30,8 @@ export const photosPreview = [
     {
         id: 2,
         name: "beautiful-thugger-girl",
-        slug:"beautiful-thugger-girl",
+        slug: "beautiful-thugger-girl",
+        link: "https://www.behance.net/gallery/161763625/BEAUTIFUL-THUGGER-GIRL",
         isLink: true,
         title: "BEAUTIFUL THUGGER GIRL",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997252/Projects/Femi%20Johnsn/manipulations/btg_rm9xhx.png",
@@ -41,7 +42,8 @@ export const photosPreview = [
     {
         id: 3,
         name: "sour",
-        slug:"sour",
+        slug: "sour",
+        link: "https://www.behance.net/gallery/161763707/SOUR",
         isLink: true,
         title: "SOUR",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997230/Projects/Femi%20Johnsn/manipulations/sour_ztddti.png",
@@ -52,7 +54,8 @@ export const photosPreview = [
     {
         id: 4,
         name: "black-and-gold",
-        slug:"black-and-gold",
+        slug: "black-and-gold",
+        link: "https://www.behance.net/gallery/123978925/black-and-gold",
         isLink: true,
         title: "BLACK & GOLD",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997230/Projects/Femi%20Johnsn/manipulations/bg_uuv5j8.png",
@@ -63,7 +66,8 @@ export const photosPreview = [
     {
         id: 5,
         name: "framed",
-        slug:"framed",
+        slug: "framed",
+        link: "https://www.behance.net/gallery/142770753/FRAMED",
         isLink: true,
         title: "FRAMED",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997248/Projects/Femi%20Johnsn/manipulations/framed_lzl8h8.png",
@@ -86,7 +90,8 @@ export const photosPreview = [
     {
         id: 8,
         name: "thug-tenet",
-        slug:"thug-tenet",
+        slug: "thug-tenet",
+        link: "https://www.behance.net/gallery/115527343/TENET",
         isLink: true,
         title: "THUG TENET",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997261/Projects/Femi%20Johnsn/manipulations/tt_yrbhbc.png",
@@ -97,7 +102,8 @@ export const photosPreview = [
     {
         id: 9,
         name: "lost-butterflies",
-        slug:"lost-butterflies",
+        slug: "lost-butterflies",
+        link: "https://www.behance.net/gallery/161763349/LOST-BUTTERFLIES",
         isLink: true,
         title: "LOST BUTTERFLIES",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997234/Projects/Femi%20Johnsn/manipulations/lb_iwibil.png",
@@ -108,7 +114,8 @@ export const photosPreview = [
     {
         id: 10,
         name: "delusional",
-        slug:"delusional",
+        slug: "delusional",
+        link: "https://www.behance.net/gallery/115460201/DELUSIONAL",
         isLink: true,
         title: "DELUSIONAL",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997235/Projects/Femi%20Johnsn/manipulations/delusion_mr4nfq.png",
@@ -119,7 +126,8 @@ export const photosPreview = [
     {
         id: 11,
         name: "urban-tracker",
-        slug:"urban-tracker",
+        slug: "urban-tracker",
+        link: "https://www.behance.net/gallery/142770903/URBAN-TRACKER",
         isLink: true,
         title: "URBAN TRACKER",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997255/Projects/Femi%20Johnsn/manipulations/ut_ejtsd3.png",
