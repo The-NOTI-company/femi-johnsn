@@ -41,7 +41,7 @@ const Navigation = ({ isNavDark, invertMenuColours=false, backButtonDestination=
                         :
                             (
                                 <img
-                                    className={ classNames( "duration-300 w-full max-w-[42px]", showLightBg && "invert")}
+                                    className={ classNames( "duration-300 w-full max-w-[40px]", showLightBg && "invert")}
                                     src={"/assets/svg/navigation/logo.svg"}
                                     alt="Femi Johnsn"
                                 />    

@@ -54,7 +54,7 @@ export default function Projects() {
                         </div>
                     </div>
                     <div className="mt-32 mb-16 self-end mr-28">
-                        <a href="#" className="flex max-h-min">
+                        <a href="#projects" className="flex max-h-min">
                             <h2 className="text-[19px] leading-[25px] text-white self-center mt-24 -mr-7">scroll down</h2>
                             <img
                                 src={"/assets/svg/projects/spiral.svg"}
@@ -63,7 +63,7 @@ export default function Projects() {
                         </a>
                     </div>
                     <p className="w-[75%] text-[#808080]">
-                        These are the projects that make us who we are bla bla bla. We tend to communicate bla bla Lörem ipsum cybersoldat parasport benim i poke fast fabir i sovyn. Dylanman kungspudel rutkod, på krympflation, buda berenur, hyberavdrag. Munhota vifalingar: klimatneutral att cykelbox ogooglebar. 
+                        Welcome to the projects section of the multi-faceted individual who has a wide range of interests! Here, you will find a diverse collection of topics that capture the attention and curiosity of this person. From music and art to NFTs and technology, Femi Johnsn has something for everyone. So sit back, relax, and immerse yourself in the world of a passionate and inquisitive person.
                     </p>
                 </section>
                 <section className="mt-20">
@@ -81,9 +81,9 @@ export default function Projects() {
                             />
                         </div>
                     </div>
-                    <div className="flex flex-col justify-between">
+                    <div className="flex flex-col justify-between" id="projects">
                         <div className="flex w-full ">
-                            <div className="">
+                            <div className="max-w-[640px]">
                                 <img
                                     className="w-full"
                                     src={"/assets/png/projects/noti.png"}
@@ -92,10 +92,10 @@ export default function Projects() {
                             </div>
                             <div className="mx-[72px] relative">
                                 <h1 className="text-[38px] leading-[50px] text-secondary font-cursive">
-                                    The Noti Company
+                                    The NOTI Company
                                 </h1>
-                                <p className="text-[19px] leading-[25px] text-secondary mt-[34px] mb-[30px] w-[80%]">
-                                    Have you ever gazed into someone eyes and seen their souls, deepest secrets, and wildest fantasies? Come along with me on a tour through their illusion.
+                                <p className="text-[19px] leading-[25px] text-secondary mt-[34px] mb-[30px] w-[78%]">
+                                    NOTI (NotOutToImpress) is a branding and design company with a unique approach to helping businesses and brands tell their stories and attract their audience through analytical and creative thinking.
                                 </p>
                                 <div className="flex text-[19px] leading-[25px] text-secondary mb-8">
                                     <h2>Role:</h2>
@@ -105,7 +105,7 @@ export default function Projects() {
                                         <p>Co-founder</p>
                                     </div>
                                 </div>
-                                <Link href="/">
+                                <a href="https://thenoticompany.com/" target="_blank" rel="noreferrer">
                                     <div className="flex items-center cursor-pointer group">
                                         <p className="text-heading-6 text-secondary">View work</p>
                                         <img
@@ -114,7 +114,7 @@ export default function Projects() {
                                             alt="Forward"    
                                         /> 
                                     </div>
-                                </Link>
+                                </a>
                                 <div className="absolute top-[230px] right-44">
                                     <img
                                         src={"/assets/svg/projects/sparks.svg"}
@@ -130,15 +130,15 @@ export default function Projects() {
                             </div>
                         </div>
                         <div className="flex flex-row-reverse w-full justify-between">
-                            <div className="-mt-40">
+                            <div className="-mt-40 max-w-[640px]">
                                 <img
                                     className="w-full"
                                     src={"/assets/png/projects/icreate.png"}
-                                    alt="NOTI"
+                                    alt=""
                                 />
                             </div>
-                            <div className="mt-32 relative">
-                                <div className="absolute -top-12 left-28">
+                            <div className="my-28 relative">
+                                <div className="absolute -top-10 left-28">
                                     <img
                                         src={"/assets/svg/projects/round.svg"}
                                         alt="Round illustration"
@@ -148,7 +148,7 @@ export default function Projects() {
                                     iCreate
                                 </h1>
                                 <p className="text-[19px] leading-[25px] text-secondary mt-[34px] mb-[35px] w-[80%]">
-                                    Have you ever gazed into someone eyes and seen their souls, deepest secrets, and wildest fantasies? Come along with me on a tour through their illusion.
+                                    iCreate offers a safe and nurturing environment for artists, designers, writers, and innovators to develop their skills, explore new ideas, and unleash their creativity to the fullest.
                                 </p>
                                 <div className="flex text-[19px] leading-[25px] text-secondary mb-8">
                                     <h2>Role:</h2>
@@ -158,7 +158,7 @@ export default function Projects() {
                                         <p>Co-founder</p>
                                     </div>
                                 </div>
-                                <Link href="/">
+                                <a href="https://instagram.com/icreatetour?igshid=YmMyMTA2M2Y=" target="_blank" rel="noreferrer">
                                     <div className="flex items-center cursor-pointer group">
                                         <p className="text-heading-6 text-secondary">View work</p>
                                         <img
@@ -167,15 +167,15 @@ export default function Projects() {
                                             alt="Forward"    
                                         /> 
                                     </div>
-                                </Link>
+                                </a>
                             </div>
                         </div>
                         <div className="flex w-full justify-between">
-                            <div>
+                            <div className="max-w-[640px]">
                                 <img
                                     className="w-full"
                                     src={"/assets/png/projects/nfts.png"}
-                                    alt="NOTI"
+                                    alt="Femi's NFTs"
                                 />
                             </div>
                             <div className="mx-[74px] mt-40 relative">
@@ -189,17 +189,17 @@ export default function Projects() {
                                     I Love NFTs
                                 </h1>
                                 <p className="text-[19px] leading-[25px] text-secondary mt-[34px] mb-[35px] w-[80%]">
-                                    Have you ever gazed into someone eyes and seen their souls, deepest secrets, and wildest fantasies? Come along with me on a tour through their illusion.
+                                    I am a web3 merchant weaving intricate worlds of wonder through the art of NFTs. As a collector and creator, he gathers and creates unique tokens that captivate the imagination and inspire awe.
                                 </p>
                                 <div className="flex text-[19px] leading-[25px] text-secondary mb-8">
                                     <h2>Role:</h2>
                                     <div className="flex ml-2">
-                                        <p>Creative Director</p>
+                                        <p>Creator</p>
                                         <span className="mx-1">|</span>
-                                        <p>Co-founder</p>
+                                        <p>Collector</p>
                                     </div>
                                 </div>
-                                <Link href="/">
+                                <a href="https://opensea.io/femijohnsn" target="_blank" rel="noreferrer">
                                     <div className="flex items-center cursor-pointer group">
                                         <p className="text-heading-6 text-secondary">View work</p>
                                         <img
@@ -208,19 +208,19 @@ export default function Projects() {
                                             alt="Forward"    
                                         /> 
                                     </div>
-                                </Link>
+                                </a>
                             </div>
                         </div>
                         <div className="flex flex-row-reverse w-full">
-                            <div className="-mt-40">
+                            <div className="-mt-32 max-w-[640px]">
                                 <img
                                     className="w-full"
                                     src={"/assets/png/projects/opus.png"}
                                     alt="Opus session"
                                 />
                             </div>
-                            <div className="mt-32 relative">
-                                <div className="absolute -top-12 left-28">
+                            <div className="my-32 relative">
+                                <div className="absolute -top-10 left-28">
                                     <img
                                         src={"/assets/svg/projects/round.svg"}
                                         alt="Round illustration"
@@ -230,17 +230,15 @@ export default function Projects() {
                                     Opus Sessions
                                 </h1>
                                 <p className="text-[19px] leading-[25px] text-secondary mt-[34px] mb-[35px] w-[80%]">
-                                    Have you ever gazed into someone eyes and seen their souls, deepest secrets, and wildest fantasies? Come along with me on a tour through their illusion.
+                                    Our vlog/podcast is a unique blend of passion, expertise, and human connection, crafted to engage and inspire music lovers of all kinds.
                                 </p>
                                 <div className="flex text-[19px] leading-[25px] text-secondary mb-8">
                                     <h2>Role:</h2>
                                     <div className="flex ml-2">
                                         <p>Creative Director</p>
-                                        <span className="mx-1">|</span>
-                                        <p>Co-founder</p>
                                     </div>
                                 </div>
-                                <Link href="/">
+                                <a href="https://opussessions.netlify.app" target="_blank" rel="noreferrer" >
                                     <div className="flex items-center cursor-pointer group">
                                         <p className="text-heading-6 text-secondary">View work</p>
                                         <img
@@ -249,7 +247,7 @@ export default function Projects() {
                                             alt="Forward"    
                                         /> 
                                     </div>
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>
