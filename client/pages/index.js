@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <MobileView/>
       <div className={ classNames( "hidden breakpoint-i:flex", styles.container)}>
-        <div className='font-body max-w-[75%] pt-7 pb-[23px] z-10'>
+        <div className='font-body max-w-[75%] pt-7 z-10'>
           <main className='flex flex-col '>
             <nav className='text-white self-end w-fit'>
               <ul className='flex my-[14px]'>
@@ -46,9 +46,9 @@ export default function Home() {
               </div>
             </header>
           </main>
-          <footer className="flex justify-between text-white mt-[200px] w-full">
+          <footer className="flex justify-between text-white mt-[170px] w-full">
             <div></div>
-            <h3 className='justify-end'>femi johnsn  | All rights reserved  |  2022</h3>
+            <h3 className='justify-end'>femi johnsn  | All rights reserved  |  2023</h3>
           </footer>
         </div>
         <div className='max-w-[40%] w-full h-full absolute right-0 z-0 bottom-0'>
