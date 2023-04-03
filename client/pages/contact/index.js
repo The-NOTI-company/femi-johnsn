@@ -1,9 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
+import { toast } from "react-hot-toast";
 import DefaultLayout from "../../components/layouts/default-layout";
 import styles from '../../styles/pages/Contact.module.scss'
 import { classNames } from "../../utils/classNames";
 
 export default function Contact() {
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        toast('This service is currently unavailable', {
+            icon: "👨‍🍳"
+        })
+    }
+
     return (
         <DefaultLayout
             className={ classNames(styles["container"] )}
@@ -78,7 +87,7 @@ export default function Contact() {
                                 <input type="text" placeholder="Description of shoot." className="text-base-semi-bold bg-transparent self-end h-full w-full text-secondary text-right"/>
                             </div>
                         </div>
-                        <button className="rounded-full uppercase border-2 border-accent w-60 h-60 self-center mt-[75px] mb-24 group duration-300 hover:bg-accent">
+                        <button onClick={handleSubmit} className="rounded-full uppercase border-2 border-accent w-60 h-60 self-center mt-[75px] mb-24 group duration-300 hover:bg-accent">
                             <span className="text-accent text-heading-4 duration-300 group-hover:text-secondary">Send</span>
                         </button>
                     </form>
