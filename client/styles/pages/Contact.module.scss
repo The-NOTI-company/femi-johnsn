@@ -1,0 +1,11 @@
+.emailText{
+    transition: all 2s;
+    -webkit-transition: all 2s;
+
+    &:hover{
+        -webkit-text-fill-color: #F0F9F1; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #050606;
+        text-decoration: none;
+    }
+}

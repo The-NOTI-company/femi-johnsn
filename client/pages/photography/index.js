@@ -11,6 +11,7 @@ import PreviewLink from '../../components/photography/preview-link'
 import ArrowStory from '../../components/photography/arrow-story'
 import Link from 'next/link'
 import FeaturedPost from '../../components/photography/featured-post'
+import { horizontalLoop } from '../../utils/gsapFunctions'
 
 
 gsap.registerPlugin(ScrollTrigger)
@@ -26,12 +27,26 @@ function Photography() {
         const titleTwo = document.getElementById("title-2")
 
 
-        window.onscroll = () => {
-            let scrollPos = window.scrollY
-            titleOne.style.translate = `-${scrollPos}px 0`
-            titleTwo.style.translate = `${scrollPos}px 0`
-        }
+        let textOne = horizontalLoop(titleOne, {
+            repeat: -1,
+            speed: 0.34,
+            draggable: false,
+            reversed: false,
+        });
+
+        let textTwo = horizontalLoop(titleTwo, {
+            repeat: -1,
+            speed: 0.34,
+            draggable: false,
+            reversed: true,
+        });
         
+        
+        window.addEventListener("scroll", () => {
+            gsap.to(textOne, { timeScale: 1, overwrite: false,});
+            gsap.to(textTwo, { timeScale: -1 , overwrite: false});
+        });
+
         gsap.to(galleryContainer.current, {
             scale: 1.13,
             overflowY: 'hidden',
@@ -81,7 +96,7 @@ function Photography() {
                 <section className='px-[94px] pt-8' >
                     <div className={styles["titles"]} id="titles" ref={headerTitles}>
                         <h1 className='font-cursive text-display-1 whitespace-nowrap' id='title-1'>PHOTOGRAPHY  |   RETOUCHING</h1>
-                        <h1 className='font-cursive text-display-1 whitespace-nowrap -translate-x-[60%]' id='title-2'>CREATIVE DIRECTION  |  EXHIBITION</h1>
+                        <h1 className='font-cursive text-display-1 whitespace-nowrap' id='title-2'>CREATIVE DIRECTION  |  EXHIBITION</h1>
                     </div>
                     <div ref={galleryContainer} className={ classNames(styles["gallery-container"], 'overflow-hidden mt-10')}>
                         <GalleryReel

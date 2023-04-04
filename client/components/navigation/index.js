@@ -40,11 +40,14 @@ const Navigation = ({ isNavDark, invertMenuColours=false, backButtonDestination=
                             )
                         :
                             (
-                                <img
-                                    className={ classNames( "duration-300 w-full max-w-[40px]", showLightBg && "invert")}
-                                    src={"/assets/svg/navigation/logo.svg"}
-                                    alt="Femi Johnsn"
-                                />    
+                                <Link href="/">
+                                    <img
+                                        className={ classNames( "duration-300 w-full max-w-[40px] cursor-pointer", showLightBg && "invert")}
+                                        src={"/assets/svg/navigation/logo.svg"}
+                                        alt="Femi Johnsn"
+                                    />    
+                                </Link>
+                               
                             )
                     }
                 </div>
