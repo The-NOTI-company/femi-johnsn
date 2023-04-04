@@ -37,7 +37,8 @@ export const photosPreview = [
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997252/Projects/Femi%20Johnsn/manipulations/btg_rm9xhx.png",
         hoverImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997551/Projects/Femi%20Johnsn/shoots/_DSC_28_a6bn8g.jpg",
         roles: ["Creative Direction","Photography"],
-        className: "max-w-[466px]"
+        className: "max-w-[466px]",
+        type: "indoors"
     },
     {
         id: 3,
@@ -49,7 +50,8 @@ export const photosPreview = [
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997230/Projects/Femi%20Johnsn/manipulations/sour_ztddti.png",
         hoverImg: "https://res.cloudinary.com/noticompany/image/upload/v1664929642/Projects/Femi%20Johnsn/shoots/_DSC_41sour_wzomht.jpg",
         roles: ["Creative Direction","Photography"],
-        className: ""
+        className: "",
+        type: "indoors"
     },
     {
         id: 4,
@@ -61,7 +63,8 @@ export const photosPreview = [
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997230/Projects/Femi%20Johnsn/manipulations/bg_uuv5j8.png",
         hoverImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997649/Projects/Femi%20Johnsn/shoots/DSC_0550_yhgk3v.jpg",
         roles: ["Creative Direction"],
-        className: ""
+        className: "",
+        type: "outdoors"
     },
     {
         id: 5,
@@ -73,7 +76,8 @@ export const photosPreview = [
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997248/Projects/Femi%20Johnsn/manipulations/framed_lzl8h8.png",
         hoverImg: "https://res.cloudinary.com/noticompany/image/upload/v1664929718/Projects/Femi%20Johnsn/shoots/_DSC0176_jl8rlv.jpg",
         roles: ["Creative Direction"],
-        className: ""
+        className: "",
+        type: "outdoors"
     },
     {
         id: 6,
@@ -97,7 +101,9 @@ export const photosPreview = [
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997261/Projects/Femi%20Johnsn/manipulations/tt_yrbhbc.png",
         hoverImg: "https://res.cloudinary.com/noticompany/image/upload/v1664985834/Projects/Femi%20Johnsn/shoots/DSC_0116-min_s854yj.jpg",
         roles: ["Creative Direction"],
-        className: ""
+        className: "",
+        type: "outdoors"
+
     },
     {
         id: 9,
@@ -109,7 +115,9 @@ export const photosPreview = [
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997234/Projects/Femi%20Johnsn/manipulations/lb_iwibil.png",
         hoverImg: "https://res.cloudinary.com/noticompany/image/upload/v1664998587/Projects/Femi%20Johnsn/shoots/IMG_2403_oxpjfm.jpg",
         roles: ["Creative Direction"],
-        className: ""
+        className: "",
+        type: "outdoors"
+
     },
     {
         id: 10,
@@ -121,7 +129,9 @@ export const photosPreview = [
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997235/Projects/Femi%20Johnsn/manipulations/delusion_mr4nfq.png",
         hoverImg: "https://res.cloudinary.com/noticompany/image/upload/v1664998888/Projects/Femi%20Johnsn/shoots/kp21-min_jun4b5.jpg",
         roles: ["Creative Direction"],
-        className: ""
+        className: "",
+        type: "outdoors"
+
     },
     {
         id: 11,
@@ -133,7 +143,9 @@ export const photosPreview = [
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997255/Projects/Femi%20Johnsn/manipulations/ut_ejtsd3.png",
         hoverImg: "https://res.cloudinary.com/noticompany/image/upload/v1664998657/Projects/Femi%20Johnsn/shoots/IMG_1707_xccydb.jpg",
         roles: ["Creative Direction"],
-        className: ""
+        className: "",
+        type: "outdoors"
+
     },
 ]
 
