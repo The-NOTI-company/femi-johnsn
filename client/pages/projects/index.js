@@ -15,7 +15,7 @@ export default function Projects() {
         >
             <main className="mt-[111px] p-[57px]">
                 <section className="flex flex-col">
-                    <div className="w-full mx-12 relative">
+                    <div className="w-full mx-12 relative self-center">
                         <div className="absolute top-[-90px]">
                             <img
                                 src={"/assets/svg/projects/star-vector.svg"}
@@ -54,16 +54,16 @@ export default function Projects() {
                         </div>
                     </div>
                     <div className="mt-32 mb-16 self-end mr-28">
-                        <a href="#projects" className="flex max-h-min">
+                        <div className="flex max-h-min">
                             <h2 className="text-[19px] leading-[25px] text-white self-center mt-24 -mr-7">scroll down</h2>
                             <img
                                 src={"/assets/svg/projects/spiral.svg"}
                                 alt="Spiral"
                             />
-                        </a>
+                        </div>
                     </div>
                     <p className="w-[75%] text-[#808080]">
-                        Welcome to the projects section of the multi-faceted individual who has a wide range of interests! Here, you will find a diverse collection of topics that capture the attention and curiosity of this person. From music and art to NFTs and technology, Femi Johnsn has something for everyone. So sit back, relax, and immerse yourself in the world of a passionate and inquisitive person.
+                        Welcome to the projects section of the multi-faceted individual who has a wide range of interests! Here, you will find a diverse collection of topics that capture my attention and curiosity. From music and art to NFTs and technology, I have something for everyone. So sit back, relax, and immerse yourself in the world of a passionate and inquisitive person.
                     </p>
                 </section>
                 <section className="mt-20">
@@ -189,7 +189,7 @@ export default function Projects() {
                                     I Love NFTs
                                 </h1>
                                 <p className="text-[19px] leading-[25px] text-secondary mt-[34px] mb-[35px] w-[80%]">
-                                    I am a web3 merchant weaving intricate worlds of wonder through the art of NFTs. As a collector and creator, he gathers and creates unique tokens that captivate the imagination and inspire awe.
+                                    I am a web3 merchant weaving intricate worlds of wonder through the art of NFTs. As a collector and creator, I gather and create unique tokens that captivate the imagination and inspire awe.
                                 </p>
                                 <div className="flex text-[19px] leading-[25px] text-secondary mb-8">
                                     <h2>Role:</h2>

@@ -8,7 +8,7 @@ export default function ProjectsLayout({ className, title, description, children
     return (
         <>
             <MobileView />
-            <div className={ classNames( "hidden max-w-screen breakpoint-i:block", className)}>
+            <div className={ classNames( "hidden breakpoint-i:block max-w-[100vw]", className)}>
                 <SeoHead
                     title={title}
                     description={description}
