@@ -22,7 +22,7 @@ const Navigation = ({ isNavDark, invertMenuColours=false, backButtonDestination=
                 )
             }
         >
-            <div className={ classNames("flex justify-between items-center py-8 px-[8%] mx-auto w-full fixed top-0 z-30 duration-500 ", invertMenuColours &&  "invert", setMixBlend && "mix-blend-difference" )}>
+            <div className={ classNames("flex justify-between items-center py-8 px-[8%] mx-auto w-full fixed top-0 z-30 duration-500 breakpoint-ii:px-[4%]", invertMenuColours &&  "invert", setMixBlend && "mix-blend-difference" )}>
                 <div>
                     {
                         backButtonDestination ?

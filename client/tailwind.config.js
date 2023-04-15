@@ -72,6 +72,8 @@ module.exports = {
       'desktop': '1280px',
 
       "breakpoint-i": "1200px",
+
+      "breakpoint-ii": "1550px"
     }
   },
   plugins: [],

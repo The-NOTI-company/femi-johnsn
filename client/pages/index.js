@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <MobileView/>
       <div className={ classNames( "hidden breakpoint-i:flex", styles.container)}>
-        <div className='font-body max-w-[75%] pt-7 z-10'>
+        <div className='font-body w-[70%] pt-7 z-10'>
           <main className='flex flex-col '>
             <nav className='text-white self-end w-fit'>
               <ul className='flex my-[14px]'>

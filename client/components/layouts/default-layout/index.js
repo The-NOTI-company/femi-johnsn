@@ -9,7 +9,7 @@ export default function DefaultLayout({ className, title, description, children,
     return (
         <>
             <MobileView />
-            <div className={ classNames( "hidden breakpoint-i:block max-w-screen", className)}>
+            <div className={ classNames( "hidden breakpoint-i:block max-w-[100vw]", className)}>
                 <SeoHead
                     title={title}
                     description={description}
