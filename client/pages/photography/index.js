@@ -29,14 +29,14 @@ function Photography() {
 
         let textOne = horizontalLoop(titleOne, {
             repeat: -1,
-            speed: 0.34,
+            speed: 0.1,
             draggable: false,
             reversed: false,
         });
 
         let textTwo = horizontalLoop(titleTwo, {
             repeat: -1,
-            speed: 0.34,
+            speed: 0.1,
             draggable: false,
             reversed: true,
         });
@@ -95,8 +95,8 @@ function Photography() {
             <main className="mt-[111px]">
                 <section className='px-[94px] pt-8' >
                     <div className={styles["titles"]} id="titles" ref={headerTitles}>
-                        <h1 className='font-cursive text-display-1 whitespace-nowrap' id='title-1'>PHOTOGRAPHY  |   RETOUCHING</h1>
-                        <h1 className='font-cursive text-display-1 whitespace-nowrap' id='title-2'>CREATIVE DIRECTION  |  EXHIBITION</h1>
+                        <h1 className='font-cursive text-display-1 whitespace-nowrap' id='title-1'>PHOTOGRAPHY  |   RETOUCHING | PHOTOGRAPHY  |   RETOUCHING</h1>
+                        <h1 className='font-cursive text-display-1 whitespace-nowrap' id='title-2'>CREATIVE DIRECTION  |  EXHIBITION | CREATIVE DIRECTION  |  EXHIBITION</h1>
                     </div>
                     <div ref={galleryContainer} className={ classNames(styles["gallery-container"], 'overflow-hidden mt-10')}>
                         <GalleryReel

@@ -1,9 +1,25 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link"
+import { useEffect, useRef } from "react"
 import ProjectsLayout from "../../components/layouts/projects-layout"
 import styles from '../../styles/pages/Projects.module.scss'
+import anime from "animejs"
 
 export default function Projects() {
+
+    const animationRef = useRef(null)
+
+    useEffect(() => {
+        animationRef.current = anime({
+            targets: '#illustrations .star-vector path',
+            strokeDashoffset: [anime.setDashoffset, 0],
+            easing: 'easeInOutSine',
+            duration: 1500,
+            delay: function(el, i) { return i * 250 },
+            // direction: 'alternate',
+            // loop: true
+        });
+    })
+
     return (
         <ProjectsLayout
             className={styles['container']}
