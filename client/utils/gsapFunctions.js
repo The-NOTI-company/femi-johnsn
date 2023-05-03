@@ -31,7 +31,7 @@ export function horizontalLoop(items, config) {
         widths = [],
         xPercents = [],
         curIndex = 0,
-        pixelsPerSecond = (config.speed || 1) * 100,
+        pixelsPerSecond = (config.speed || 1) * 120,
         snap =
             config.snap === false
                 ? (v) => v

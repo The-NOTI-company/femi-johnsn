@@ -1,4 +1,4 @@
-$anim-duration: 65s;
+$anim-duration: 180s;
 
 .container{
     display: flex;
@@ -24,13 +24,25 @@ $anim-duration: 65s;
 }
 
 
-// Scrolling animation
+// Scrolling animation\
 @keyframes marquee {
   0% {
-    transform: translate(0, 0);
+    transform: translateZ(0) translateY(0);
   }
-  100% {
-    // Multiply the $anim-duration by 1.891 to get an estimate translateY % 
-    transform: translate(0, -122.95%);
+
+  to {
+    transform: translateZ(0) translateY(calc(-50% - 12px));
   }
 }
+
+
+
+// @keyframes marquee {
+//   0% {
+//     transform: translate(0, 0);
+//   }
+//   100% {
+//     // Multiply the $anim-duration by 1.891 to get an estimate translateY % 
+//     transform: translate(0, -141.825%);
+//   }
+// }
