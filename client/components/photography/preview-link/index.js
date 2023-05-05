@@ -7,7 +7,7 @@ const PreviewLink = ({ picData, borderBottom, containerClassName="", imgClassNam
 
     return (
         <div className={
-            classNames("group cursor-pointer", className, borderBottom && "border-b-2 border-b-secondary", containerClassName)
+            classNames("group cursor-pointer", containerClassName)
         }>
             {
                 link ? (

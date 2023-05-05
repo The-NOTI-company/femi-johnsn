@@ -60,6 +60,10 @@ module.exports = {
         'neutral-7': '#050606',
         'neutral-8': '#000000',
       },
+      gridTemplateColumns: {
+        'creations-grid':'repeat(auto-fit, minmax(300px, 1fr))'
+      },
+      
       maxWidth: {
         'screen': '1550px'
       }

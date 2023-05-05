@@ -172,3 +172,62 @@ export const featuredJobs = [
         logoSrc: "/assets/svg/photography/heart-you-logo.svg"
     },
 ]
+
+export const photographyCollection = [
+    {
+        id: 1,
+        name: "beautiful-thugger-girl",
+        slug: "beautiful-thugger-girl",
+        link: "https://www.behance.net/gallery/161763625/BEAUTIFUL-THUGGER-GIRL",
+        title: "BEAUTIFUL THUGGER GIRL",
+        roles: ["Creative Direction", "Photography"],
+        quote: {
+            title: "Her eyes spoke the truth",
+            description: '<p>Femi Johnsn here. I work as a photographer for fashion magazines. Before switching to fashion editorials in 2020, I worked as a portrait and landscape photographer for 5 years.<br/><br/><br/> Colors, skin tones, and clothing pieces blended together appeal to me. "There are a lot of photographers, but there aren`t a lot of creatives."</p>'
+        },
+        imgs: [
+            "https://res.cloudinary.com/noticompany/image/upload/v1683246837/Projects/Femi%20Johnsn/shoots/beautiful%20thugger%20girl/_DSC_14_bmvhme.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683246817/Projects/Femi%20Johnsn/shoots/beautiful%20thugger%20girl/_DSC_26_mm3cvc.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683246775/Projects/Femi%20Johnsn/shoots/beautiful%20thugger%20girl/_DSC_11111111111_qznyhv.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683246663/Projects/Femi%20Johnsn/shoots/beautiful%20thugger%20girl/_DSC_10_vynuz8.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683246622/Projects/Femi%20Johnsn/shoots/beautiful%20thugger%20girl/_DSC0249_v3buem.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683246613/Projects/Femi%20Johnsn/shoots/beautiful%20thugger%20girl/_DSC0125_w65z53.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683246600/Projects/Femi%20Johnsn/shoots/beautiful%20thugger%20girl/_DSC0192_s7dfb4.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683246597/Projects/Femi%20Johnsn/shoots/beautiful%20thugger%20girl/_DSC0154_fbq1nv.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683246584/Projects/Femi%20Johnsn/shoots/beautiful%20thugger%20girl/_DSC0104_oirgc2.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683246517/Projects/Femi%20Johnsn/shoots/beautiful%20thugger%20girl/_DSC0131_cqbhf9.jpg"
+        ],
+        credits: {
+            muse: [
+                {
+                    name: "Vizee.O",
+                    contactLink: ""
+                }
+            ],
+            makeup: [
+                {
+                    name: "Odd_shawty",
+                    contactLink: ""
+                },
+            ],
+            stylists: [
+                {
+                    name: "Vhickiey_",
+                    contactLink: ""
+                },
+                {
+                    name: "Tomilola",
+                    contactLink: ""
+                }
+            ],
+            creativeAgency: [
+                {
+                    name: "Wacpeople",
+                    contactLink: ""
+                }
+            ],
+
+            assist: []
+        }
+    }
+]
