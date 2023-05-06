@@ -36,6 +36,7 @@ export const photosPreview = [
         slug: "beautiful-thugger-girl",
         link: "https://www.behance.net/gallery/161763625/BEAUTIFUL-THUGGER-GIRL",
         isLink: true,
+        redirect: false,
         title: "BEAUTIFUL THUGGER GIRL",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997252/Projects/Femi%20Johnsn/manipulations/btg_rm9xhx.png",
         hoverImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997551/Projects/Femi%20Johnsn/shoots/_DSC_28_a6bn8g.jpg",
@@ -49,6 +50,7 @@ export const photosPreview = [
         slug: "sour",
         link: "https://www.behance.net/gallery/161763707/SOUR",
         isLink: true,
+        redirect: true,
         title: "SOUR",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997230/Projects/Femi%20Johnsn/manipulations/sour_ztddti.png",
         hoverImg: "https://res.cloudinary.com/noticompany/image/upload/v1664929642/Projects/Femi%20Johnsn/shoots/_DSC_41sour_wzomht.jpg",
@@ -62,6 +64,7 @@ export const photosPreview = [
         slug: "black-and-gold",
         link: "https://www.behance.net/gallery/123978925/black-and-gold",
         isLink: true,
+        redirect: false,
         title: "BLACK & GOLD",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997230/Projects/Femi%20Johnsn/manipulations/bg_uuv5j8.png",
         hoverImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997649/Projects/Femi%20Johnsn/shoots/DSC_0550_yhgk3v.jpg",
@@ -75,6 +78,7 @@ export const photosPreview = [
         slug: "framed",
         link: "https://www.behance.net/gallery/142770753/FRAMED",
         isLink: true,
+        redirect: false,
         title: "FRAMED",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997248/Projects/Femi%20Johnsn/manipulations/framed_lzl8h8.png",
         hoverImg: "https://res.cloudinary.com/noticompany/image/upload/v1664929718/Projects/Femi%20Johnsn/shoots/_DSC0176_jl8rlv.jpg",
@@ -100,6 +104,7 @@ export const photosPreview = [
         slug: "thug-tenet",
         link: "https://www.behance.net/gallery/115527343/TENET",
         isLink: true,
+        redirect: false,
         title: "THUG TENET",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997261/Projects/Femi%20Johnsn/manipulations/tt_yrbhbc.png",
         hoverImg: "https://res.cloudinary.com/noticompany/image/upload/v1664985834/Projects/Femi%20Johnsn/shoots/DSC_0116-min_s854yj.jpg",
@@ -114,6 +119,7 @@ export const photosPreview = [
         slug: "lost-butterflies",
         link: "https://www.behance.net/gallery/161763349/LOST-BUTTERFLIES",
         isLink: true,
+        redirect: false,
         title: "LOST BUTTERFLIES",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997234/Projects/Femi%20Johnsn/manipulations/lb_iwibil.png",
         hoverImg: "https://res.cloudinary.com/noticompany/image/upload/v1664998587/Projects/Femi%20Johnsn/shoots/IMG_2403_oxpjfm.jpg",
@@ -128,6 +134,7 @@ export const photosPreview = [
         slug: "delusional",
         link: "https://www.behance.net/gallery/115460201/DELUSIONAL",
         isLink: true,
+        redirect: false,
         title: "DELUSIONAL",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997235/Projects/Femi%20Johnsn/manipulations/delusion_mr4nfq.png",
         hoverImg: "https://res.cloudinary.com/noticompany/image/upload/v1664998888/Projects/Femi%20Johnsn/shoots/kp21-min_jun4b5.jpg",
@@ -142,6 +149,7 @@ export const photosPreview = [
         slug: "urban-tracker",
         link: "https://www.behance.net/gallery/142770903/URBAN-TRACKER",
         isLink: true,
+        redirect: false,
         title: "URBAN TRACKER",
         initialImg: "https://res.cloudinary.com/noticompany/image/upload/v1664997255/Projects/Femi%20Johnsn/manipulations/ut_ejtsd3.png",
         hoverImg: "https://res.cloudinary.com/noticompany/image/upload/v1664998657/Projects/Femi%20Johnsn/shoots/IMG_1707_xccydb.jpg",
@@ -201,32 +209,284 @@ export const photographyCollection = [
             muse: [
                 {
                     name: "Vizee.O",
-                    contactLink: ""
+                    contactLink: "https://instagram.com/vizee.o?igshid=NTc4MTIwNjQ2YQ="
                 }
             ],
             makeup: [
                 {
                     name: "Odd_shawty",
-                    contactLink: ""
+                    contactLink: "https://instagram.com/odd__shawty?igshid=NTc4MTIwNjQ2YQ=="
                 },
             ],
             stylists: [
                 {
                     name: "Vhickiey_",
-                    contactLink: ""
+                    contactLink: "https://instagram.com/vhickiey_?igshid=NTc4MTIwNjQ2YQ=="
                 },
                 {
                     name: "Tomilola",
-                    contactLink: ""
+                    contactLink: "https://instagram.com/tomilola_splash?igshid=NTc4MTIwNjQ2YQ=="
                 }
             ],
             creativeAgency: [
                 {
                     name: "Wacpeople",
-                    contactLink: ""
+                    contactLink: "https://instagram.com/wacpeople?igshid=NTc4MTIwNjQ2YQ=="
                 }
             ],
 
+            assist: [
+                {
+                    name: "Caesarofthe90s",
+                    contactLink:"https://instagram.com/atlonglastcz?igshid=NTc4MTIwNjQ2YQ=="
+                },
+                {
+                    name: "Yemi Onis",
+                    contactLink: "https://instagram.com/yemionis?igshid=NTc4MTIwNjQ2YQ=="
+                }
+            ]
+        }
+    },
+    {
+        id: 2,
+        name: "black-and-gold",
+        slug: "black-and-gold",
+        link: "https://www.behance.net/gallery/123978925/black-and-gold",
+        title: "BLACK & GOLD",
+        roles: ["Creative Direction"],
+        imgs: [
+            "https://res.cloudinary.com/noticompany/image/upload/v1683377756/Projects/Femi%20Johnsn/shoots/black%20and%20gold/DSC_0553_uid9xb.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683377755/Projects/Femi%20Johnsn/shoots/black%20and%20gold/DSC_0563_gccubn.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683377549/Projects/Femi%20Johnsn/shoots/black%20and%20gold/DSC_0570_p95swx.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683377755/Projects/Femi%20Johnsn/shoots/black%20and%20gold/DSC_0561_kkxv2q.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683377756/Projects/Femi%20Johnsn/shoots/black%20and%20gold/DSC_0564_filqht.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683377664/Projects/Femi%20Johnsn/shoots/black%20and%20gold/DSC_0550_wxt4bt.jpg",
+        ],
+        credits: {
+            muse: [
+                {
+                    name: "Akorede omoniyi",
+                    contactLink: "https://instagram.com/akoredethegoat?igshid=YmMyMTA2M2Y="
+                }
+            ],
+            makeup: [
+                {
+                    name: "Oferoritse",
+                    contactLink: "https://instagram.com/ella_aduku?igshid=YmMyMTA2M2Y="
+                },
+            ],
+            stylists: [
+                {
+                    name: "Femijohnsn",
+                    contactLink: "https://www.instagram.com/femijohnsn/?hl=en"
+                }
+            ],
+            creativeAgency: [],
+            assist: []
+        }
+    },
+    {
+        id: 3,
+        name: "framed",
+        slug: "framed",
+        link: "https://www.behance.net/gallery/142770753/FRAMED",
+        title: "FRAMED",
+        roles: ["Creative Direction"],
+        quote: {
+            title: "We are still framed",
+            description: '<p> Mistaken for who we are not, the outside world versus what is within; even when observed through crystal lenses at the center of our existence, WE ARE STILL FRAMED.</p>'
+        },
+        imgs: [
+            "https://res.cloudinary.com/noticompany/image/upload/v1683247518/Projects/Femi%20Johnsn/shoots/framed/_DSC0179_xmxync.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683247463/Projects/Femi%20Johnsn/shoots/framed/_DSC0137_gigz0z.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683247449/Projects/Femi%20Johnsn/shoots/framed/_DSC0197_uyrm5t.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683247432/Projects/Femi%20Johnsn/shoots/framed/_DSC0173_dwj4mc.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683247420/Projects/Femi%20Johnsn/shoots/framed/_DSC0191_b3zowu.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683247412/Projects/Femi%20Johnsn/shoots/framed/_DSC0166_veu6de.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683247409/Projects/Femi%20Johnsn/shoots/framed/_DSC0172_vdle3f.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683247403/Projects/Femi%20Johnsn/shoots/framed/_DSC0146_xjihqa.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683247371/Projects/Femi%20Johnsn/shoots/framed/_DSC0198_fubuqw.jpg",
+        ],
+        credits: {
+            muse: [
+                {
+                    name: "Oreomodunbii",
+                    contactLink: "https://instagram.com/ore_dunbi?igshid=YmMyMTA2M2Y="
+                }
+            ],
+            makeup: [],
+            stylists: [
+                {
+                    name: "Ejirhoghene",
+                    contactLink: "https://instagram.com/ejirhoghene?igshid=YmMyMTA2M2Y="
+                }
+            ],
+            creativeAgency: [],
+            assist: [
+                {
+                    name: "Deji Samuel",
+                    contactLink: "https://instagram.com/dejisamuel__?igshid=YmMyMTA2M2Y="
+                }
+            ]
+        }
+    },
+    {
+        id: 4,
+        name: "thug-tenet",
+        slug: "thug-tenet",
+        link: "https://www.behance.net/gallery/115527343/TENET",
+        title: "THUG TENET",
+        roles: ["Creative Direction"],
+        imgs: [
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291518/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0130-min_qck5ry.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291515/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0112-min_hapl8k.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291506/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0096-min_pbjzb5.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291511/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0062-min_jvzaxm.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291495/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0109-min_medqa6.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291487/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0108-min_weyknc.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291495/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0116-min_i4gudb.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291512/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0111-min_b9iyzt.jpg",
+        ],
+        credits: {
+            muse: [
+                {
+                    name: "Akorede omoniyi",
+                    contactLink: "https://instagram.com/akoredethegoat?igshid=YmMyMTA2M2Y="
+                }
+            ],
+            makeup: [],
+            stylists: [
+                {
+                    name: "Femijohnsn",
+                    contactLink: "https://www.instagram.com/femijohnsn/?hl=en"
+                }
+            ],
+            creativeAgency: [],
+            assist: []
+        }
+    },
+    {
+        id: 5,
+        name: "lost-butterflies",
+        slug: "lost-butterflies",
+        link: "https://www.behance.net/gallery/161763349/LOST-BUTTERFLIES",
+        title: "LOST BUTTERFLIES",
+        roles: ["Creative Direction"],
+        imgs: [
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291518/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0130-min_qck5ry.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291515/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0112-min_hapl8k.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291506/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0096-min_pbjzb5.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291511/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0062-min_jvzaxm.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291495/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0109-min_medqa6.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291487/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0108-min_weyknc.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291495/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0116-min_i4gudb.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291512/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0111-min_b9iyzt.jpg",
+        ],
+        credits: {
+            muse: [
+                {
+                    name: "Okeke Jennifer",
+                    contactLink: "https://instagram.com/jennyy__o?igshid=YmMyMTA2M2Y="
+                },
+                {
+                    name: "Masiri",
+                    contactLink: "https://instagram.com/_masiri_?igshid=YmMyMTA2M2Y="
+                },
+            ],
+            makeup: [
+                {
+                    name: "Odd shawty",
+                    contactLink: "https://instagram.com/odd__shawty?igshid=YmMyMTA2M2Y="
+                },
+            ],
+            stylists: [
+                {
+                    name: "Ejirhoghene",
+                    contactLink: "https://instagram.com/ejirhoghene?igshid=YmMyMTA2M2Y="
+                }
+            ],
+            creativeAgency: [
+                {
+                    name: "Wacpeople",
+                    contactLink: "https://instagram.com/wacpeople?igshid=YmMyMTA2M2Y="
+                }
+            ],
+            assist: [
+                {
+                    name: "Deji Samuel",
+                    contactLink: "https://instagram.com/dejisamuel__?igshid=YmMyMTA2M2Y="
+                }
+            ]
+        }
+    },
+    {
+        id: 6,
+        name: "delusional",
+        slug: "delusional",
+        link: "https://www.behance.net/gallery/115460201/DELUSIONAL",
+        title: "DELUSIONAL",
+        roles: ["Creative Direction"],
+        imgs: [
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291885/Projects/Femi%20Johnsn/shoots/delusional/kp9-min_iademv.webp",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291884/Projects/Femi%20Johnsn/shoots/delusional/kp112111-min_asgauk.webp",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291882/Projects/Femi%20Johnsn/shoots/delusional/111-min_zfxbqd.webp",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291882/Projects/Femi%20Johnsn/shoots/delusional/22-min_m8gkdi.webp",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291877/Projects/Femi%20Johnsn/shoots/delusional/kp29-min_hanpsd.webp",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291876/Projects/Femi%20Johnsn/shoots/delusional/kp21-min_kn3dwf.webp",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291873/Projects/Femi%20Johnsn/shoots/delusional/kp12-min_qdxtao.webp",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291873/Projects/Femi%20Johnsn/shoots/delusional/kp5-min_vbe44k.webp",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291869/Projects/Femi%20Johnsn/shoots/delusional/kp13-min_q4bs0e.webp"
+        ],
+        credits: {
+            muse: [
+                {
+                    name: "Akorede omoniyi",
+                    contactLink: "https://instagram.com/akoredethegoat?igshid=YmMyMTA2M2Y="
+                }
+            ],
+            makeup: [],
+            stylists: [
+                {
+                    name: "Femijohnsn",
+                    contactLink: "https://www.instagram.com/femijohnsn/?hl=en"
+                }
+            ],
+            creativeAgency: [],
+            assist: []
+        }
+    },
+    {
+        id: 7,
+        name: "urban-tracker",
+        slug: "urban-tracker",
+        link: "https://www.behance.net/gallery/142770903/URBAN-TRACKER",
+        title: "URBAN TRACKER",
+        roles: ["Creative Direction"],
+        imgs: [
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291518/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0130-min_qck5ry.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291515/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0112-min_hapl8k.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291506/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0096-min_pbjzb5.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291511/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0062-min_jvzaxm.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291495/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0109-min_medqa6.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291487/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0108-min_weyknc.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291495/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0116-min_i4gudb.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683291512/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0111-min_b9iyzt.jpg",
+        ],
+        credits: {
+            muse: [
+                {
+                    name: "Ejirhoghene",
+                    contactLink: "https://instagram.com/ejirhoghene?igshid=YmMyMTA2M2Y="
+                }
+            ],
+            makeup: [],
+            stylists: [
+                {
+                    name: "Ejirhoghene",
+                    contactLink: "https://instagram.com/ejirhoghene?igshid=YmMyMTA2M2Y="
+                }
+            ],
+            creativeAgency: [],
             assist: []
         }
     }

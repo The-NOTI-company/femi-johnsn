@@ -20,7 +20,13 @@ export default function PhotoDisplay() {
     }
 
     const renderMoreCreations = () => {
-        return photosPreview.filter(p => p.slug !== slug).splice(0, 4).map(project => {
+        function getMultipleRandom(arr, num) {
+            const shuffled = [...arr].sort(() => 0.5 - Math.random());
+          
+            return shuffled.slice(0, num);
+        }
+
+        return getMultipleRandom(photosPreview, photosPreview.length).filter(p => p.slug !== slug).slice(0,4).map(project => {
             if (project.isLink) {
                 return (
                     <PreviewLink
@@ -60,17 +66,21 @@ export default function PhotoDisplay() {
                             </div>
                         </div>
                     </div>
-                    <div className="mt-[205px] px-[4%]">
-                        <div className="border-t-[3px] border-secondary w-fit max-w-[550px]">
-                            <h2 className="mt-10 mb-[30px] text-heading-2 font-bold text-secondary">
-                                {currentCollection?.quote?.title}
-                            </h2>
-                            <div className="text-secondary text-base font-normal"
-                                dangerouslySetInnerHTML={{ __html: currentCollection?.quote?.description }}
-                            >
+                    {
+                        currentCollection?.quote ? (
+                            <div className="mt-[205px] px-[4%]">
+                                <div className="border-t-[3px] border-secondary w-fit max-w-[550px]">
+                                    <h2 className="mt-10 mb-[30px] text-heading-2 font-bold text-secondary">
+                                        {currentCollection?.quote?.title}
+                                    </h2>
+                                    <div className="text-secondary text-base font-normal"
+                                        dangerouslySetInnerHTML={{ __html: currentCollection?.quote?.description }}
+                                    >
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        ) : null
+                    }
                 </section>
                 <section className="flex flex-col mt-[350px] mb-14">
                     <div className="px-[3%]">

@@ -17,7 +17,11 @@ function ReelImageSlider({ pictures, iterations, direction, className }) {
             <div className={styles.slider} style={{ animationDirection: `${direction}` }}>
                 {imgArray.map((img, idx) => (
                     <div className={ classNames(styles.slide, 'max-w-[365px]')} key={idx}>
-                        <img src={img} alt="slide" />
+                        <img
+                            src={img}
+                            alt="slide"
+                            // loading='lazy'
+                        />
                     </div>
                 ))}
             </div>

@@ -3,14 +3,14 @@ import { classNames } from "../../../utils/classNames"
 import Link from "next/link"
 
 const PreviewLink = ({ picData, borderBottom, containerClassName="", imgClassName="" }) => {
-    const { slug, title, initialImg, hoverImg, roles, className, link } = picData
+    const { slug, title, initialImg, hoverImg, roles, className, link, redirect } = picData
 
     return (
         <div className={
             classNames("group cursor-pointer", containerClassName)
         }>
             {
-                link ? (
+                redirect ? (
                     <a href={link} target="_blank" rel="noreferrer" > 
                         <div className="w-full">
                             <div className="w-full relative">

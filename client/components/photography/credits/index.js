@@ -4,7 +4,7 @@ function Credits({ muse, makeup, stylists, creativeAgency, assist }) {
 
     const Role = ({ title, data }) => {
 
-        if (data?.length > 0) {
+        if ( data && data?.length > 0) {
             return (
                 <div className="flex items-center flex-col mb-[33px]">
                     <h2 className="uppercase text-secondary text-base mb-3">{title}</h2>

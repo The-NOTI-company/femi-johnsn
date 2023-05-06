@@ -26,7 +26,8 @@ function ViewCollection({ title, images }) {
                         return (
                             <div className={classNames('h-full', styles.collectionImg)} key={idx}>
                                 <img
-                                    src={image} alt={title + idx}
+                                    src={image}
+                                    alt={title + idx}
                                 />
                             </div>
                         )
@@ -49,6 +50,7 @@ function ViewCollection({ title, images }) {
                         className='w-full h-full'
                         src={images[0]}
                         alt={title + "1"}
+                        // loading='lazy'
                     />
                 </div>
                 <div className='w-full col-span-2'>
@@ -56,6 +58,7 @@ function ViewCollection({ title, images }) {
                         className='w-full h-full'
                         src={images[1]}
                         alt={title + "2"}
+                        // loading='lazy'
                     />
                 </div>
                 
@@ -73,6 +76,7 @@ function ViewCollection({ title, images }) {
                         className='w-full object-cover'
                         src={images[2]}
                         alt={title}
+                        // loading='lazy'
                     />
                 </div>
                 {
