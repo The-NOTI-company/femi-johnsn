@@ -79,7 +79,7 @@ export default function Projects() {
                         </div>
                     </div>
                     <p className="w-[75%] text-[#808080]">
-                        Welcome to the projects section of the multi-faceted individual who has a wide range of interests! Here, you will find a diverse collection of topics that capture my attention and curiosity. From music and art to NFTs and technology, I have something for everyone. So sit back, relax, and immerse yourself in the world of a passionate and inquisitive person.
+                        Welcome to the projects section of the multi-faceted individual who has a wide range of interests! Here, you will find a diverse collection of topics that capture my attention and curiosity. From music and art to NFTs and technology, I have something for everyone so sit back, relax, and immerse yourself in the world of a passionate and inquisitive person.
                     </p>
                 </section>
                 <section className="mt-20">
