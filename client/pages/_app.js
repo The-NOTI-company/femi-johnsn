@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <Toaster/>
+      <Toaster />
       <Component {...pageProps} />
     </>
   )
