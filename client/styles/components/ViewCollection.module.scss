@@ -1,0 +1,21 @@
+// .collection{
+
+//     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+// }
+
+.collectionImg{
+
+    &:nth-child(3){
+        grid-column: span 3 / span 3;
+    }
+}
+
+.collectionSlider{
+    .slider{
+        img{
+            width: 100%;
+            max-width: 450px !important; 
+        }
+    }
+    
+}
