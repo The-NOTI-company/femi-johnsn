@@ -46,11 +46,11 @@ export default function PhotoDisplay() {
             showSubFooter={true}
             isNavDark={true}
             backButtonDestination={"/photography/all"}
-            spinningLogoClassName="bottom-12 right-[240px]"
+            spinningLogoClassName="bottom-12 right-[100px]"
         >
             <main className="pt-[111px]">
                 <section className="mt-[169px]"> 
-                    <div className="flex justify-between text-secondary mb-[205px] w-[65%] mx-auto">
+                    <div className="flex text-secondary mb-[205px] w-[65%] mx-auto ">
                         <h4 className="font-cursive text-display-4 self-start mr-[77px] mt-6">
                             {
                                 pad(currentCollection?.id)
@@ -58,7 +58,7 @@ export default function PhotoDisplay() {
                             {"`"}
                         </h4>
                         <div className="flex flex-col max-w-fit font-body">
-                            <h1 className="text-[9.2vw]">
+                            <h1 className="text-[9.2vw] leading-[140px]">
                                 { currentCollection?.title }
                             </h1>
                             <div className="text-base mt-[52px] mx-[54px] font-normal text-right">
@@ -73,7 +73,7 @@ export default function PhotoDisplay() {
                                     <h2 className="mt-10 mb-[30px] text-heading-2 font-bold text-secondary">
                                         {currentCollection?.quote?.title}
                                     </h2>
-                                    <div className="text-secondary text-base font-normal"
+                                    <div className=" text-gray-400 text-base font-light text-justify"
                                         dangerouslySetInnerHTML={{ __html: currentCollection?.quote?.description }}
                                     >
                                     </div>

@@ -40,8 +40,8 @@ function ViewCollection({ title, images }) {
 
     if (images?.length >= 8) {
         const subGroupOne = images.slice(0, 3)
-        const subGroupTwo = images.slice(3,6)
-        const subGroupThree = images.slice(5,8)
+        const subGroupTwo = images.slice(4,7)
+        const subGroupThree = images.slice(1,3)
         
 
         return (
@@ -66,8 +66,7 @@ function ViewCollection({ title, images }) {
                         <ReelImageSlider pictures={subGroupOne} iterations={2} direction="normal" className="h-[200vh]"/>
                         <ReelImageSlider pictures={subGroupTwo} iterations={2} direction="reverse" className="h-[200vh]"/>
                         <ReelImageSlider pictures={subGroupThree} iterations={2} direction="normal" className="h-[200vh]" />
-                        <ReelImageSlider pictures={subGroupTwo} iterations={2} direction="reverse" className="h-[200vh]"/>
-                        
+                        <ReelImageSlider pictures={subGroupOne} iterations={2} direction="reverse" className="h-[200vh]"/>
                     </div>
                 </div>
                 <div className='w-full col-span-4'>

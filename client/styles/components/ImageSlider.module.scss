@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    height: 110vh;
+    height: 100vh;
 
     .slider{
       height: 100%;
@@ -21,6 +21,6 @@
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(0, -181%);
+    transform: translate(0, -182%);
   }
 }

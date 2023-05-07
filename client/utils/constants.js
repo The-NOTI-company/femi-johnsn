@@ -191,7 +191,7 @@ export const photographyCollection = [
         roles: ["Creative Direction", "Photography"],
         quote: {
             title: "Her eyes spoke the truth",
-            description: '<p>"Beautiful Thugger Girl" is a stunning fashion editorial that showcases the fierce and captivating beauty of a confident and empowered woman. The model is dressed in a breathtaking pink ball gown, adorned with delicate lace and intricate embroidery that exudes elegance and sophistication. The dress is perfectly complemented by an intricate necklace of pearls that adds a touch of glamour to the overall look. <br/><br/><br/> The model`s pose and expression convey an air of confidence and power, with eyes that seem to look right through the viewer and into their soul. Her gaze is intense, and her demeanor exudes a sense of mystery and allure that is both captivating and alluring.</p>'
+            description: `<p>"Beautiful Thugger Girl" is a stunning fashion editorial that showcases the fierce and captivating beauty of a confident and empowered woman. The model is dressed in a breathtaking pink ball gown, adorned with delicate lace and intricate embroidery that exudes elegance and sophistication. The dress is perfectly complemented by an intricate necklace of pearls that adds a touch of glamour to the overall look. <br/><br/><br/> The model's pose and expression convey an air of confidence and power, with eyes that seem to look right through the viewer and into their soul. Her gaze is intense, and her demeanor exudes a sense of mystery and allure that is both captivating and alluring.</p>`
         },
         imgs: [
             "https://res.cloudinary.com/noticompany/image/upload/v1683246837/Projects/Femi%20Johnsn/shoots/beautiful%20thugger%20girl/_DSC_14_bmvhme.jpg",
@@ -256,16 +256,16 @@ export const photographyCollection = [
         roles: ["Creative Direction", "Photography"],
         quote: {
             title: "Her eyes spoke the truth II",
-            description: '<p>"SOUR" is a fashion editorial that embodies a fierce, gothic aesthetic with a dreamy and glossy effect. The model is dressed in a stunning black leather dress that hugs her curves perfectly, with intricate detailing that adds a touch of elegance and glamour to the overall look.</p>'
+            description: `<p>"SOUR" is a fashion editorial that embodies a fierce, gothic aesthetic with a dreamy and glossy effect. The model is dressed in a stunning black leather dress that hugs her curves perfectly, with intricate detailing that adds a touch of elegance and glamour to the overall look. <br/><br/> The scenery is bathed in a sparkling red and blue light, creating a dreamy and ethereal effect that adds to the overall ambiance of the editorial. The model's pose and expression are confident and alluring, with eyes that seem to look right through the viewer and into their soul, as if she wants to occupy their mind.</p>`
         },
         imgs: [
-            "https://res.cloudinary.com/noticompany/image/upload/v1683450706/Projects/Femi%20Johnsn/shoots/sour/_DSC_77-min_orvosa.jpg",
-            "https://res.cloudinary.com/noticompany/image/upload/v1683450702/Projects/Femi%20Johnsn/shoots/sour/_DSC_49-min_py78tq.jpg",
-            "https://res.cloudinary.com/noticompany/image/upload/v1683247056/Projects/Femi%20Johnsn/shoots/sour/_DSC_41sour_mphbzh.jpg",
-            "https://res.cloudinary.com/noticompany/image/upload/v1683450664/Projects/Femi%20Johnsn/shoots/sour/_DSC_54-min_hlkkd5.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683450705/Projects/Femi%20Johnsn/shoots/sour/_DSC_76-min_hemm6v.jpg",
             "https://res.cloudinary.com/noticompany/image/upload/v1683450663/Projects/Femi%20Johnsn/shoots/sour/_DSC_41sour-min_l9kqxq.jpg",
-            "https://res.cloudinary.com/noticompany/image/upload/v1683450663/Projects/Femi%20Johnsn/shoots/sour/_DSC_52-min_swurxm.jpg",
-            "https://res.cloudinary.com/noticompany/image/upload/v1683450663/Projects/Femi%20Johnsn/shoots/sour/_DSC_47-min_yjdkl8.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683450664/Projects/Femi%20Johnsn/shoots/sour/_DSC_54-min_hlkkd5.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683450706/Projects/Femi%20Johnsn/shoots/sour/_DSC_77-min_orvosa.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683450663/Projects/Femi%20Johnsn/shoots/sour/_DSC_41sour-min_l9kqxq.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683466288/Projects/Femi%20Johnsn/shoots/sour/_DSC_79-min_l7uovc.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683466286/Projects/Femi%20Johnsn/shoots/sour/_DSC_57-min_hy3c6s.jpg",
             "https://res.cloudinary.com/noticompany/image/upload/v1683450705/Projects/Femi%20Johnsn/shoots/sour/_DSC_76-min_hemm6v.jpg",
         ],
         credits: {
@@ -318,10 +318,10 @@ export const photographyCollection = [
         title: "BLACK & GOLD",
         roles: ["Creative Direction"],
         imgs: [
-            "https://res.cloudinary.com/noticompany/image/upload/v1683377756/Projects/Femi%20Johnsn/shoots/black%20and%20gold/DSC_0553_uid9xb.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683455332/Projects/Femi%20Johnsn/shoots/black%20and%20gold/DSC_055455-min_fcruny.jpg",
             "https://res.cloudinary.com/noticompany/image/upload/v1683377755/Projects/Femi%20Johnsn/shoots/black%20and%20gold/DSC_0563_gccubn.jpg",
+            "https://res.cloudinary.com/noticompany/image/upload/v1683455332/Projects/Femi%20Johnsn/shoots/black%20and%20gold/DSC_0657-Recovered-min_zbynbu.jpg",
             "https://res.cloudinary.com/noticompany/image/upload/v1683377549/Projects/Femi%20Johnsn/shoots/black%20and%20gold/DSC_0570_p95swx.jpg",
-            "https://res.cloudinary.com/noticompany/image/upload/v1683377755/Projects/Femi%20Johnsn/shoots/black%20and%20gold/DSC_0561_kkxv2q.jpg",
             "https://res.cloudinary.com/noticompany/image/upload/v1683377756/Projects/Femi%20Johnsn/shoots/black%20and%20gold/DSC_0564_filqht.jpg",
             "https://res.cloudinary.com/noticompany/image/upload/v1683377664/Projects/Femi%20Johnsn/shoots/black%20and%20gold/DSC_0550_wxt4bt.jpg",
         ],
@@ -435,16 +435,7 @@ export const photographyCollection = [
         link: "https://www.behance.net/gallery/161763349/LOST-BUTTERFLIES",
         title: "LOST BUTTERFLIES",
         roles: ["Creative Direction"],
-        imgs: [
-            "https://res.cloudinary.com/noticompany/image/upload/v1683291518/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0130-min_qck5ry.jpg",
-            "https://res.cloudinary.com/noticompany/image/upload/v1683291515/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0112-min_hapl8k.jpg",
-            "https://res.cloudinary.com/noticompany/image/upload/v1683291506/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0096-min_pbjzb5.jpg",
-            "https://res.cloudinary.com/noticompany/image/upload/v1683291511/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0062-min_jvzaxm.jpg",
-            "https://res.cloudinary.com/noticompany/image/upload/v1683291495/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0109-min_medqa6.jpg",
-            "https://res.cloudinary.com/noticompany/image/upload/v1683291487/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0108-min_weyknc.jpg",
-            "https://res.cloudinary.com/noticompany/image/upload/v1683291495/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0116-min_i4gudb.jpg",
-            "https://res.cloudinary.com/noticompany/image/upload/v1683291512/Projects/Femi%20Johnsn/shoots/thug%20tenet/DSC_0111-min_b9iyzt.jpg",
-        ],
+        imgs: [],
         credits: {
             muse: [
                 {
