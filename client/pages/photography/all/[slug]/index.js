@@ -1,9 +1,7 @@
 import DefaultLayout from "../../../../components/layouts/default-layout";
 import styles from '../../../../styles/pages/PhotoDisplay.module.scss'
-import Link from "next/link";
 import { photographyCollection, photosPreview } from "../../../../utils/constants";
 import PreviewLink from "../../../../components/photography/preview-link";
-import { classNames } from "../../../../utils/classNames";
 import { useRouter } from "next/router";
 import Credits from "../../../../components/photography/credits";
 import ViewCollection from "../../../../components/photography/view-collection";
