@@ -28,6 +28,7 @@ function ViewCollection({ title, images }) {
                                 <img
                                     src={image}
                                     alt={title + idx}
+                                    className='object-cover'
                                 />
                             </div>
                         )
@@ -37,7 +38,7 @@ function ViewCollection({ title, images }) {
         )
     }
 
-    if (images?.length > 8) {
+    if (images?.length >= 8) {
         const subGroupOne = images.slice(0, 3)
         const subGroupTwo = images.slice(3,6)
         const subGroupThree = images.slice(5,8)
@@ -47,18 +48,16 @@ function ViewCollection({ title, images }) {
             <div className='grid grid-cols-4 gap-[51px]'>
                 <div className='w-full col-span-2'>
                     <img
-                        className='w-full h-full'
+                        className='w-full h-full object-cover'
                         src={images[0]}
                         alt={title + "1"}
-                        // loading='lazy'
                     />
                 </div>
                 <div className='w-full col-span-2'>
                     <img
-                        className='w-full h-full'
+                        className='w-full h-full object-cover'
                         src={images[1]}
                         alt={title + "2"}
-                        // loading='lazy'
                     />
                 </div>
                 
@@ -73,10 +72,9 @@ function ViewCollection({ title, images }) {
                 </div>
                 <div className='w-full col-span-4'>
                     <img
-                        className='w-full object-cover'
+                        className='w-full object-cover max-h-[90vh]'
                         src={images[2]}
                         alt={title}
-                        // loading='lazy'
                     />
                 </div>
                 {

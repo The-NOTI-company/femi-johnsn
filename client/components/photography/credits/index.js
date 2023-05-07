@@ -8,7 +8,7 @@ function Credits({ muse, makeup, stylists, creativeAgency, assist }) {
             return (
                 <div className="flex items-center flex-col mb-[33px]">
                     <h2 className="uppercase text-secondary text-base mb-3">{title}</h2>
-                    <div className="inline text-secondary text-base-big">
+                    <div className="inline-block text-secondary text-base-big">
                         {
                             data?.map((entry, idx) => {
                                 return (

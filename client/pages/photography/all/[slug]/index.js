@@ -26,7 +26,7 @@ export default function PhotoDisplay() {
             return shuffled.slice(0, num);
         }
 
-        return getMultipleRandom(photosPreview, photosPreview.length).filter(p => p.slug !== slug).slice(0,4).map(project => {
+        return getMultipleRandom(photosPreview, photosPreview.length).filter(p => p.slug !== slug).slice(1,4).map(project => {
             if (project.isLink) {
                 return (
                     <PreviewLink
@@ -89,7 +89,7 @@ export default function PhotoDisplay() {
                             images={currentCollection?.imgs}
                         />
                     </div>
-                    <div className="border-[3px] border-secondary px-[10%] py-[5%] rounded-[50%] w-fit self-end mt-[100px]">
+                    <div className=" flex items-center justify-center border-[3px] border-secondary min-w-[700px] min-h-[700px] rounded-[50%] self-end mt-[100px]">
                         <Credits
                             muse={currentCollection?.credits?.muse}
                             makeup={currentCollection?.credits?.makeup}

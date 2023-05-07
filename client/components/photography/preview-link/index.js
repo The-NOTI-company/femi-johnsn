@@ -34,7 +34,7 @@ const PreviewLink = ({ picData, borderBottom, containerClassName="", imgClassNam
                         </div>
                     </a>
                 ): (
-                    <Link href={`/photography/all/${slug}`}> 
+                    <Link href={`/photography/all/${slug}`} scroll={true}> 
                         <div className="w-full">
                             <div className="w-full relative">
                                 <img className={classNames("hover:opacity-5 duration-700 w-full absolute h-full object-cover" , imgClassName)} src={initialImg} alt={title} />
