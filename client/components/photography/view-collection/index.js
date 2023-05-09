@@ -24,11 +24,11 @@ function ViewCollection({ title, images }) {
                 {
                     images.map((image, idx) => {
                         return (
-                            <div className={classNames('h-full', styles.collectionImg)} key={idx}>
+                            <div className={classNames('h-full w-full', styles.collectionImg)} key={idx}>
                                 <img
                                     src={image}
                                     alt={title + idx}
-                                    className='object-cover'
+                                    className='object-cover w-full h-full'
                                 />
                             </div>
                         )

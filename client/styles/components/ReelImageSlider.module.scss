@@ -1,4 +1,4 @@
-$anim-duration: 180s;
+$anim-duration: 1000s;
 
 .container{
     display: flex;
@@ -6,19 +6,18 @@ $anim-duration: 180s;
     overflow: hidden;
 
     .slider{
-        height: 100%;
-        animation-name: marquee;
-        animation-duration: $anim-duration;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        
-        .slide{
-            margin: 24px 0;
+      animation-name: marquee;
+      animation-duration: $anim-duration;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      
+      .slide{
+          margin: 24px 0;
 
-            img{
-                width: 100%;
-            }
-        }
+          img{
+              width: 100%;
+          }
+      }
     }
 }
 
@@ -30,7 +29,7 @@ $anim-duration: 180s;
   }
 
   to {
-    transform: translateZ(0) translateY(calc(-50% - 12px));
+    transform: translateZ(0) translateY(calc(-49.5% - 12px));
   }
 }
 

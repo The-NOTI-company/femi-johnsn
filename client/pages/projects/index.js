@@ -18,7 +18,7 @@ export default function Projects() {
             // direction: 'alternate',
             // loop: true
         });
-    })
+    },[])
 
     return (
         <ProjectsLayout
