@@ -56,7 +56,7 @@ function Photography() {
                 scrub: true
             },
         })
-    })
+    }, [])
 
     const renderPreview = () => (
         photosPreview.map((pic) => {
@@ -66,7 +66,8 @@ function Photography() {
                         key={pic.id}
                         picData={pic}
                         borderBottom={true}
-                        containerClassName={"mb-44"}
+                        containerClassName={"mb-44 border-b-white border-b-2"}
+                        imgClassName='w-full'
                     />
                 )
             }

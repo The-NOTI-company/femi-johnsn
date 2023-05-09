@@ -55,11 +55,11 @@ export default function AllPhotos() {
                         </li>
                     </ul>
                 </section>
-                <section>
+                <section className="w-full">
                     <h4 className="text-display-4 font-cursive mb-14 text-secondary">
                         PRODIGY
                     </h4>
-                    <div className={classNames("grid gap-8", styles["preview-grid"])}>
+                    <div className={classNames("grid", styles["preview-grid"])}>
                         {
                             filteredPhotosPreview.map((pic) => {
                                 if (pic.isLink) {

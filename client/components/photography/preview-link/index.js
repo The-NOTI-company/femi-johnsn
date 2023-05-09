@@ -2,8 +2,8 @@
 import { classNames } from "../../../utils/classNames"
 import Link from "next/link"
 
-const PreviewLink = ({ picData, borderBottom, containerClassName="", imgClassName="" }) => {
-    const { slug, title, initialImg, hoverImg, roles, className, link, redirect } = picData
+const PreviewLink = ({ picData, containerClassName="", imgClassName="" }) => {
+    const { slug, title, initialImg, hoverImg, roles, link, redirect } = picData
 
     return (
         <div className={

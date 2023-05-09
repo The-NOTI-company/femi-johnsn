@@ -9,16 +9,25 @@ function ImageSlider({ pictures, iterations }) {
         return [].concat.apply([], arrays);
     }
 
-    const imgArray = replicateArray(pictures, iterations);
+    const imgArray = pictures;
 
     return (
         <div className={styles.container}>
             <div className={styles.slider}>
-                {imgArray.map((img, idx) => (
-                    <div className={styles.slide} key={idx}>
-                        <img src={img} alt="slide" />
-                    </div>
-                ))}
+                <div>
+                    {imgArray.map((img, idx) => (
+                        <div className={styles.slide} key={idx}>
+                            <img src={img} alt="slide" />
+                        </div>
+                    ))}
+                </div>
+                <div>
+                    {imgArray.map((img, idx) => (
+                        <div className={styles.slide} key={idx}>
+                            <img src={img} alt="slide" />
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );
