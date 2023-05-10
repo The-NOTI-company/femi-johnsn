@@ -1,0 +1,21 @@
+.makeMagicArrow{
+    transition: 200ms;
+    stroke: #F0F9F1;
+}
+
+.makeMagicLink{
+
+    &:hover{
+        .makeMagicLinkText{
+            background: linear-gradient(90deg, #4FB576 0%, #44C489 30%, #28A9AE 46%, #28A2B7 59%, #4C7788 71%, #6C4F63 80%, #432C39 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+
+        .makeMagicArrow{
+            stroke: #28A2B7 !important;
+        }
+    }   
+}

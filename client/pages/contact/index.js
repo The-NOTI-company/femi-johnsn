@@ -35,7 +35,7 @@ export default function Contact() {
                                     to Femi Johnsn -
                                 </p>
                             </div>
-                            <a href="#" className="w-[248px] h-[248px] border-accent border-2 m-auto rounded-full relative duration-300 group hover:bg-accent">
+                            <a href="mailto:femijohnsnn@gmail.com" className="w-[248px] h-[248px] border-accent border-2 m-auto rounded-full relative duration-300 group hover:bg-accent">
                                 <p className="absolute top-[43%] left-[22%] uppercase text-heading-4 text-accent font-body duration-300 group-hover:text-secondary">
                                     Contact me
                                 </p>
