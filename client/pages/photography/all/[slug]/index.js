@@ -18,13 +18,8 @@ export default function PhotoDisplay() {
     }
 
     const renderMoreCreations = () => {
-        function getMultipleRandom(arr, num) {
-            const shuffled = [...arr].sort(() => 0.5 - Math.random());
-          
-            return shuffled.slice(0, num);
-        }
 
-        return getMultipleRandom(photosPreview, photosPreview.length).filter(p => p.slug !== slug).slice(1,4).map(project => {
+        return photosPreview.filter(p => p.slug !== slug).slice(1,4).map(project => {
             if (project.isLink) {
                 return (
                     <PreviewLink
