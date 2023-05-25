@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.8,
+      duration: 1.5,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
     })
   
@@ -23,14 +23,20 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   useEffect(() => {
-    router.events.on('routeChangeComplete', () => {
-      window.scroll({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-      });
-    });
-  },[router])
+    const isBrowser = () => typeof window !== 'undefined';
+
+    function scrollToTop() {
+      if (!isBrowser()) return;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    router.events.on('routeChangeComplete', scrollToTop);
+
+    return () => {
+      router.events.off("routeChangeComplete", scrollToTop);
+    };
+
+  },[router.events])
 
   return (
     <>
