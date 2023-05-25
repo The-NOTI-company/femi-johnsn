@@ -5,10 +5,22 @@ import PreviewLink from "../../../../components/photography/preview-link";
 import { useRouter } from "next/router";
 import Credits from "../../../../components/photography/credits";
 import ViewCollection from "../../../../components/photography/view-collection";
+import { useEffect } from "react";
 
 export default function PhotoDisplay() {
     const router = useRouter()
     const { slug } = router.query
+
+    useEffect(() => {
+        const isBrowser = () => typeof window !== 'undefined';
+
+        function scrollToTop() {
+          if (!isBrowser()) return;
+          window.scrollTo({ top: 0 });
+        }
+
+        scrollToTop()
+    }, [router.events])
 
 
     const currentCollection = photographyCollection.find(p => p.slug === slug)

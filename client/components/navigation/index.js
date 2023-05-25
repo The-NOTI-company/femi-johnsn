@@ -27,7 +27,7 @@ const Navigation = ({ isNavDark, invertMenuColours=false, backButtonDestination=
                     {
                         backButtonDestination ?
                             (
-                                <Link href={`${backButtonDestination}`} scroll={false}>
+                                <Link href={`${backButtonDestination}`}>
                                     <div className="flex items-center cursor-pointer group">
                                         <img
                                             className="duration-200 group-hover:-translate-x-1"
