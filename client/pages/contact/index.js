@@ -21,69 +21,74 @@ export default function Contact() {
             isNavDark={false}
             invertMenuColours={false}
             setMixBlend={true}
-            spinningLogoClassName="bottom-12 left-[72px]"
+            spinningLogoClassName="bottom-12 left-[10px] tablet:left-[72px]"
         >
             <main className="bg-secondary pt-[111px]">
                 <section className="w-full">
                     <div className="flex flex-col w-full">
                         <div className="flex mx-[6%]">
-                            <div>
-                                <p className="text-[96px] leading-[131px] tracking-wide text-primary uppercase font-body font-semibold">
+                            <div className={
+                                classNames(
+                                    "tracking-tight text-primary uppercase font-body font-semibold breakpoint-iii:tracking-wide",
+                                    styles.contactTitle
+                                )
+                            }>
+                                <p>
                                     say hello
                                 </p>
-                                <p className="text-[96px] leading-[131px] tracking-wide text-primary uppercase font-body font-semibold">
+                                <p>
                                     to Femi Johnsn -
                                 </p>
                             </div>
-                            <a href="mailto:femijohnsnn@gmail.com" className="w-[248px] h-[248px] border-accent border-2 m-auto rounded-full relative duration-300 group hover:bg-accent">
+                            <a href="mailto:femijohnsnn@gmail.com" className="w-[248px] h-[248px] border-accent border-2 m-auto rounded-full relative duration-300 group hover:bg-accent hidden breakpoint-i:block">
                                 <p className="absolute top-[43%] left-[22%] uppercase text-heading-4 text-accent font-body duration-300 group-hover:text-secondary">
                                     Contact me
                                 </p>
                             </a>
                         </div>
-                        <a href="mailto:femijohnsnn@gmail.com" className={classNames("text-[7.5vw] leading-[131px] tracking-wider text-primary uppercase font-body font-semibold ml-[6%] underline", styles.emailText)}>
+                        <a href="mailto:femijohnsnn@gmail.com" className={classNames("tracking-wider text-primary uppercase font-body font-semibold ml-[6%] underline w-full", styles.emailText)}>
                             femijohnsnn@gmail.com
                         </a>
                     </div>
-                    <div className="flex justify-between mx-[6%] my-32">
+                    <div className="flex flex-col-reverse justify-between mx-[6%] mt-12 mb-32 breakpoint-iii:flex-row breakpoint-iii:mt32">
                         <div className="block mr-11"></div>
                         <div className="font-body">
-                            <h1 className="text-heading-1 font-semibold mb-[60px]">Socials</h1>
+                            <h1 className="text-heading-3 font-semibold mb-[30px] breakpoint-vii:text-heading-1 breakpoint-vii:mb-[60px]">Socials</h1>
                             <ul>
-                                <li className="text-base-big font-normal uppercase">
+                                <li className="text-heading-4 font-normal uppercase mb-4 breakpoint-vii:text-base-big breakpoint-vii:mb-0">
                                     <a href="https://www.instagram.com/femijohnsn/" target="_blank" rel="noreferrer" >instagram</a>
                                 </li>
-                                <li className="text-base-big font-normal uppercase my-6">
+                                <li className="text-heading-4 font-normal uppercase mb-4 breakpoint-vii:text-base-big breakpoint-vii:mb-0">
                                     <a href="https://www.behance.net/femijohnsn?tracking_source=search_projects%7Cfemijohnsn" target="_blank" rel="noreferrer" >behance</a>
                                 </li>
-                                <li className="text-base-big font-normal uppercase">
+                                <li className="text-heading-4 font-normal uppercase mb-4 breakpoint-vii:text-base-big breakpoint-vii:mb-0">
                                     <a href="https://twitter.com/femijohnsn" target="_blank" rel="noreferrer" >twitter</a>
                                 </li>
                             </ul>
                         </div>
-                        <div className="max-w-[387px]">
-                            <img src={"/assets/png/contact/femi-1.png"} alt="Femi"/>
+                        <div className="max-w-full mb-16 breakpoint-iii:max-w-[387px] breakpoint-iii:mb-0">
+                            <img src={"/assets/png/contact/femi-1.png"} className="w-full" alt="Femi"/>
                         </div>
                     </div>
                 </section>
-                <section className="bg-primary font-body px-[100px] pt-24">
-                    <h3 className="text-[96px] leading-[131px] tracking-wide text-secondary font-semibold">Hello,</h3>
+                <section className="bg-primary font-body px-[4%] pt-24 tablet:px-[100px]">
+                    <h3 className={classNames("tracking-wide text-secondary  font-semibold", styles.formTitle)}>Hello,</h3>
                     <form className="flex flex-col">
-                        <div className="flex w-full">
-                            <h2 className="text-[96px] leading-[131px] tracking-wide text-secondary uppercase font-semibold w-2/5">My name is </h2>
-                            <div className="border-b-2 border-secondary flex flex-col w-3/5 pt-11">
+                        <div className="flex flex-col w-full desktop:flex-row ">
+                            <h2 className={classNames("tracking-wide text-secondary uppercase font-semibold w-full desktop:w-2/5", styles.formTitle)}>My name is </h2>
+                            <div className="border-b-2 border-secondary flex flex-col pt-11 pb-8 w-full desktop:w-3/5 desktop:pb-0">
                                 <input type="text" placeholder="Your name goes here." className="text-base-semi-bold bg-transparent self-end h-full w-full text-secondary text-right"/>
                             </div>
                         </div>
-                        <div className="flex w-full my-5">
-                            <h2 className="text-[96px] leading-[131px] tracking-wide text-secondary uppercase font-semibold w-2/5">My email is </h2>
-                            <div className="border-b-2 border-secondary flex flex-col w-3/5 pt-11">
+                        <div className="flex flex-col w-full my-5 desktop:flex-row">
+                            <h2 className={classNames("tracking-wide text-secondary uppercase font-semibold w-full desktop:w-2/5", styles.formTitle)}>My email is </h2>
+                            <div className="border-b-2 border-secondary flex flex-col pt-11 pb-8 w-full desktop:w-3/5 desktop:pb-0">
                                 <input type="email" placeholder="Your email goes here." className="text-base-semi-bold bg-transparent self-end h-full w-full text-secondary text-right"/>
                             </div>
                         </div>
-                        <div className="flex w-full">
-                            <h2 className="text-[96px] leading-[131px] tracking-wide text-secondary uppercase font-semibold w-2/5">I want to</h2>
-                            <div className="border-b-2 border-secondary flex flex-col w-3/5 pt-11">
+                        <div className="flex flex-col w-full desktop:flex-row">
+                            <h2 className={classNames("tracking-wide text-secondary uppercase font-semibold w-full desktop:w-2/5", styles.formTitle)}>I want to</h2>
+                            <div className="border-b-2 border-secondary flex flex-col pt-11 pb-8 w-full desktop:w-3/5 desktop:pb-0">
                                 <input type="text" placeholder="Description of shoot." className="text-base-semi-bold bg-transparent self-end h-full w-full text-secondary text-right"/>
                             </div>
                         </div>
