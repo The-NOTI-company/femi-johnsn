@@ -77,7 +77,12 @@ module.exports = {
 
       "breakpoint-i": "1200px",
 
-      "breakpoint-ii": "1550px"
+      "breakpoint-ii": "1550px",
+
+      "breakpoint-iii": "900px",
+
+      "breakpoint-iv": "700px"
+
     }
   },
   plugins: [],

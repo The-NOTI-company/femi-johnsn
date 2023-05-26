@@ -4,7 +4,6 @@ import Link from 'next/link'
 import styles from '../styles/pages/Home.module.scss'
 import { homepageImages } from '../utils/constants'
 import ImageSlider from '../components/image-slider'
-import MobileView from '../components/mobile-view'
 import { classNames } from '../utils/classNames'
 
 export default function Home() {
@@ -16,9 +15,8 @@ export default function Home() {
         <meta name="description" content="Portfolio for Femi Johnsn" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <MobileView/>
-      <div className={ classNames( "hidden breakpoint-i:flex", styles.container)}>
-        <div className='font-body w-[70%] pt-7 z-10'>
+      <div className={ classNames( "flex", styles.container)}>
+        <div className='font-body w-[95%] pt-7 z-10 tablet:w-[80%] breakpoint-iii:w-[70%]'>
           <main className='flex flex-col min-h-[80vh]'>
             <nav className='text-white self-end w-fit'>
               <ul className='flex my-[14px]'>
@@ -32,17 +30,17 @@ export default function Home() {
                   <Link href="/contact">Contact</Link>
                 </li>
               </ul>
-              <div className='ml-[-70px] max-w-[67px]'>
+              <div className='ml-[-70px] max-w-[42px] tablet:max-w-[67px]'>
                 <img src="/assets/svg/navigation/arrow.svg" className="w-full" alt="Arrow"/>
               </div>
             </nav>
-            <header className='w-2/5 mx-[65px]'>
+            <header className='w-2/5 mx-[30px] tablet:mx-[65px]'>
               <div>
-                <h1 className='font-normal font-cursive text-white text-heading'>Femi Johnsn</h1>
+                <h1 className={classNames('font-normal font-cursive text-white', styles.nameText)}>Femi Johnsn</h1>
               </div>
-              <div className='flex w-4/5 justify-between'>
+              <div className='flex w-full justify-between flex-col breakpoint-iv:flex-row breakpoint-iv:w-4/5'>
                 <p className='font-body text-white mt-[22px]'>Art, Eyes, Music & Women</p>
-                <img src="/assets/svg/home/smiley.svg" className='self-end mt-10 max-w-[80px]' alt="Smiley"/>
+                <img src="/assets/svg/home/smiley.svg" className='self-start mt-10 max-w-[50px] breakpoint-iii:self-end tablet:max-w-[80px]' alt="Smiley"/>
               </div>
             </header>
           </main>
@@ -51,7 +49,7 @@ export default function Home() {
             <h3 className='justify-end'>femi johnsn  | All rights reserved  |  2023</h3>
           </footer>
         </div>
-        <div className='max-w-[40%] w-full h-full absolute right-0 z-0 bottom-0'>
+        <div className='max-w-[60%] opacity-10 w-full h-full absolute right-0 z-0 bottom-0 tablet:max-w-[40%] breakpoint-iii:opacity-100'>
           <ImageSlider
             pictures={homepageImages}
             iterations={2}

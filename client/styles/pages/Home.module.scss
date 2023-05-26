@@ -3,3 +3,7 @@
     flex-direction: row;
     background-color: #050606;
 }
+
+.nameText{
+    font-size: clamp(60px, 16.5vw, 128px);
+}
