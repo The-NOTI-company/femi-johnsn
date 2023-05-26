@@ -45,7 +45,7 @@ function ViewCollection({ title, images }) {
         
 
         return (
-            <div className='grid grid-cols-4 gap-[51px]'>
+            <div className='grid grid-cols-4 gap-7 breakpoint-iv:gap-[51px]'>
                 <div className='w-full col-span-2'>
                     <img
                         className='w-full h-full object-cover'
@@ -61,8 +61,8 @@ function ViewCollection({ title, images }) {
                     />
                 </div>
                 
-                <div className='col-span-4 overflow-x-hidden w-full'>
-                    <div className={ classNames('rotate-[25deg] -translate-y-[240px] translate-x-[100px] grid grid-cols-4 gap-[20px] max-h-[80vh] w-full', styles.collectionSlider)}>
+                <div className='col-span-4 overflow-hidden w-full'>
+                    <div className={ classNames('rotate-[25deg] -translate-y-[240px] translate-x-[2px] grid grid-cols-4 gap-[20px] max-h-[50vh] w-[150%] laptop:w-full laptop:translate-x-[100px] laptop:max-h-[80vh]', styles.collectionSlider)}>
                         <ReelImageSlider pictures={subGroupOne} iterations={2} direction="normal" className="h-[200vh]"/>
                         <ReelImageSlider pictures={subGroupTwo} iterations={2} direction="reverse" className="h-[200vh]"/>
                         <ReelImageSlider pictures={subGroupThree} iterations={2} direction="normal" className="h-[200vh]" />
@@ -79,7 +79,7 @@ function ViewCollection({ title, images }) {
                 {
                     images?.slice(3,8).map((image, idx) => {
                         return (
-                            <div className='items-stretch' key={idx}>
+                            <div className='items-stretch hidden breakpoint-iv:block' key={idx}>
                                 <img
                                     className='w-full'
                                     src={image} alt={title + idx}

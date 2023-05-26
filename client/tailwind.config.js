@@ -89,6 +89,7 @@ module.exports = {
 
       "breakpoint-vi": "450px",
 
+      "breakpoint-vii": "500px",
     }
   },
   plugins: [],

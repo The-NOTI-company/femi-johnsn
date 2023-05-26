@@ -21,8 +21,8 @@ export default function AllPhotos() {
             backButtonDestination={"/photography"}
             spinningLogoClassName="hidden"
         >
-            <main className="flex mt-[111px] mx-[9%]">
-                <section className="font-body sticky h-full top-[35%] w-full min-h-[350px] max-w-[300px]">
+            <main className="flex mt-32 mx-[4%] breakpoint-iv:mx-[9%] breakpoint-iv:mt-[111px]">
+                <section className="font-body sticky h-full top-[35%] w-full min-h-[350px] max-w-[300px] hidden breakpoint-vii:block">
                     <h3
                         className="text-base-semi-bold uppercase text-secondary mb-4"
                     >
@@ -56,7 +56,7 @@ export default function AllPhotos() {
                     </ul>
                 </section>
                 <section className="w-full">
-                    <h4 className="text-display-4 font-cursive mb-14 text-secondary">
+                    <h4 className="text-heading-3 font-cursive mb-14 text-secondary breakpoint-iii:text-display-4">
                         PRODIGY
                     </h4>
                     <div className={classNames("grid", styles["preview-grid"])}>

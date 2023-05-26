@@ -7,8 +7,8 @@ function Credits({ muse, makeup, stylists, creativeAgency, assist }) {
         if ( data && data?.length > 0) {
             return (
                 <div className="flex items-center flex-col mb-[33px]">
-                    <h2 className="uppercase text-secondary text-base mb-3">{title}</h2>
-                    <div className="inline-block text-secondary text-base-big">
+                    <h2 className="uppercase text-secondary mb-3 text-caption tablet:text-base">{title}</h2>
+                    <div className="inline-block text-secondary text-heading-5 tablet:text-base-big breakpoint-vi:text-heading-4">
                         {
                             data?.map((entry, idx) => {
                                 return (

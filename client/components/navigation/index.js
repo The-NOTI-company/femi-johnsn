@@ -33,7 +33,7 @@ const Navigation = ({ isNavDark, invertMenuColours=false, backButtonDestination=
                         backButtonDestination ?
                             (
                                 <Link href={`${backButtonDestination}`}>
-                                    <div className="flex items-center cursor-pointer group">
+                                    <div className={classNames("flex items-center cursor-pointer group", showLightBg && "invert")}>
                                         <img
                                             className="duration-200 group-hover:-translate-x-1"
                                             src={"/assets/svg/navigation/back-icon.svg"}
