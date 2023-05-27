@@ -8,14 +8,22 @@
 .home-gallery-title{
     display: flex;
     flex-direction: column;
+    transition: all 150ms;
+
 
     &::after{
         content: "";
         height: 3px;
-        max-width: 55%;
-        margin-left: 22%;
+        max-width: 80%;
+        margin-left: 30%;
         margin-top: 22px;
-        @apply bg-secondary
+        @apply bg-secondary;
+
+        @media (min-width: 1024px) {
+            max-width: 55%;
+            margin-left: 22%;
+
+        }
     }
 }
 

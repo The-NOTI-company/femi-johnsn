@@ -48,8 +48,9 @@ function Photography() {
         });
 
         gsap.to(galleryContainer.current, {
-            scale: 1.13,
+            scale: 1.10,
             overflowY: 'hidden',
+            overflowX: "hidden",
             scrollTrigger: {
                 trigger: headerTitles.current,
                 start: "top top",
@@ -66,7 +67,7 @@ function Photography() {
                         key={pic.id}
                         picData={pic}
                         borderBottom={true}
-                        containerClassName={"mb-44 border-b-white border-b-2"}
+                        containerClassName={"mb-12 border-b-white border-b-2 tablet:mb-44"}
                         imgClassName='w-full'
                     />
                 )
@@ -91,25 +92,25 @@ function Photography() {
             title="Photography"
             showSubFooter={true}
             isNavDark={true}
-            spinningLogoClassName="bottom-12 right-[72px]"
+            spinningLogoClassName="bottom-12 right-[30px] breakpoint-iii:right-[72px]"
         >
             <main className="mt-[111px]">
-                <section className='px-[94px] pt-8' >
-                    <div className={styles["titles"]} id="titles" ref={headerTitles}>
+                <section className='px-[5%] pt-0 laptop:px-[94px] laptop:pt-8' >
+                    <div className={ classNames("hidden breakpoint-iv:block",styles["titles"])} id="titles" ref={headerTitles}>
                         <h1 className='font-cursive text-display-1 whitespace-nowrap' id='title-1'>PHOTOGRAPHY  |   RETOUCHING | PHOTOGRAPHY  |   RETOUCHING</h1>
                         <h1 className='font-cursive text-display-1 whitespace-nowrap' id='title-2'>CREATIVE DIRECTION  |  EXHIBITION | CREATIVE DIRECTION  |  EXHIBITION</h1>
                     </div>
-                    <div ref={galleryContainer} className={ classNames(styles["gallery-container"], 'overflow-hidden mt-10')}>
+                    <div ref={galleryContainer} className={ classNames(styles["gallery-container"], 'overflow-hidden mt-10 block')}>
                         <GalleryReel
                             photographyReel={photographyReel}
                         />
                     </div>
-                    <div className='flex justify-between text-secondary mt-[336px] mb-[304px]'>
+                    <div className='flex flex-col justify-between text-secondary mt-[150px] mb-[50px] laptop:mb-[304px] laptop:mt-[336px] laptop:flex-row'>
                         <h6 className='font-cursive text-display-7'>Intro</h6>
-                        <p className='max-w-[40%] text-base'>
+                        <p className='mt-6 max-w-[95%] text-heading-6 laptop:max-w-[40%] laptop:mt-0 laptop:text-base'>
                             Have you ever gazed into someone{"'"}s eyes and seen their souls, deepest secrets, and wildest fantasies? Come along with me on a tour through their illusion.
                         </p>
-                        <div>
+                        <div className='hidden laptop:block'>
                             <h6 className='font-cursive text-display-7'>STAY UPDATED</h6>
                             <ul className='flex mt-4'>
                                 <SocialLink
@@ -129,8 +130,15 @@ function Photography() {
                     </div>
                 </section>
                 <section className='flex flex-col mt-[80px] mb-[176px]'>
-                    <h3 className={ classNames('text-display-3 font-cursive text-secondary ml-[6%]', styles["home-gallery-title"] )}>It’s all bout the eyes</h3>
-                    <div className='grid grid-cols-3 gap-[22px] mt-[168px] ml-[4%] mr-[7%]'>
+                    <h3 className={
+                        classNames(
+                            'text-heading-3 font-cursive text-secondary ml-[6%] tablet:text-display-4 breakpoint-iii:text-display-3',
+                            styles["home-gallery-title"]
+                        )
+                    }>
+                        It’s all bout the eyes
+                    </h3>
+                    <div className='grid grid-cols-responsive-preview-grid gap-[22px] mt-[168px] ml-[4%] mr-[4%] breakpoint-i:mr-[7%] breakpoint-i:grid-cols-3'>
                         { renderPreview() }
                     </div>
                     <div className='font-body uppercase self-center'>
@@ -146,9 +154,9 @@ function Photography() {
                         </Link>
                     </div>
                 </section>
-                <section className='mx-[75px] mb-96'>
-                    <h3 className='text-display-3 font-cursive text-secondary uppercase'>Featured in</h3>
-                    <div className='flex my-[86px] ml-[5%]'>
+                <section className='mx-[4%] mb-96 breakpoint-vi:mx-[75px]'>
+                    <h3 className='text-heading-3 font-cursive text-secondary uppercase tablet:text-display-4 breakpoint-iii:text-display-3'>Featured in</h3>
+                    <div className='flex flex-wrap my-[86px] ml-[5%] gap-4'>
                         {
                             featuredJobs.map((job) => {
                                 return (

@@ -7,14 +7,14 @@ const SpinningLogo = ({className}) => {
     return (
         <div className={
                 classNames(
-                    "fixed w-full max-w-[164.71px] cursor-pointer hover:scale-75 duration-200 z-[4]",
+                    "fixed w-full max-w-[100px] cursor-pointer hover:scale-75 duration-200 z-[4] breakpoint-iii:max-w-[164.71px]",
                     className
                 )
             }
         >
             <Link href="/photography/all">
                 <div className="relative">
-                    <div className="w-full max-w-[64px] absolute top-[50px] left-[51px]">
+                    <div className="w-full max-w-[48px] absolute top-[25px] left-[27px] breakpoint-iii:max-w-[64px] breakpoint-iii:top-[50px] breakpoint-iii:left-[51px]">
                         <img
                             src={"/assets/svg/layout/logo-green.svg"}
                             className="w-full"

@@ -2,7 +2,7 @@ import { classNames } from "../../../utils/classNames"
 
 const ArrowStory = ({ title, alternateArrow }) => {
     return (
-        <div className={ classNames("relative self-center", alternateArrow && "ml-16")}>
+        <div className={ classNames("relative self-center hidden breakpoint-i:block", alternateArrow ? "ml-16" : "")}>
             <div className={ classNames("hover:opacity-0 absolute duration-500 ", alternateArrow && "rotate-[70.11deg]")}>
                 <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="160" cy="160" r="158.5" fill="#050606" stroke="#00A86B" strokeWidth="3"/>

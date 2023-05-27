@@ -61,7 +61,9 @@ module.exports = {
         'neutral-8': '#000000',
       },
       gridTemplateColumns: {
-        'creations-grid':'repeat(auto-fit, minmax(300px, 1fr))'
+        'creations-grid': 'repeat(auto-fit, minmax(300px, 1fr))',
+        'responsive-preview-grid': 'repeat(auto-fit, minmax(330px, 1fr))',
+        
       },
       
       maxWidth: {
@@ -77,7 +79,17 @@ module.exports = {
 
       "breakpoint-i": "1200px",
 
-      "breakpoint-ii": "1550px"
+      "breakpoint-ii": "1550px",
+
+      "breakpoint-iii": "900px",
+
+      "breakpoint-iv": "700px",
+
+      "breakpoint-v": "950px",
+
+      "breakpoint-vi": "450px",
+
+      "breakpoint-vii": "500px",
     }
   },
   plugins: [],

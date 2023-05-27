@@ -22,13 +22,18 @@ const Navigation = ({ isNavDark, invertMenuColours=false, backButtonDestination=
                 )
             }
         >
-            <div className={ classNames("flex justify-between items-center py-8 px-[8%] mx-auto w-full fixed top-0 z-30 duration-500 breakpoint-ii:px-[4%]", invertMenuColours &&  "invert", setMixBlend && "mix-blend-difference" )}>
+            <div className={
+                classNames(
+                    "flex justify-between items-center py-8 px-[4.5%] mx-auto w-full fixed top-0 z-30 duration-500 breakpoint-ii:px-[4%] laptop:px-[8%]",
+                    invertMenuColours && "invert",
+                    setMixBlend && "mix-blend-difference"
+                )}>
                 <div>
                     {
                         backButtonDestination ?
                             (
                                 <Link href={`${backButtonDestination}`}>
-                                    <div className="flex items-center cursor-pointer group">
+                                    <div className={classNames("flex items-center cursor-pointer group", showLightBg && "invert")}>
                                         <img
                                             className="duration-200 group-hover:-translate-x-1"
                                             src={"/assets/svg/navigation/back-icon.svg"}
@@ -42,7 +47,7 @@ const Navigation = ({ isNavDark, invertMenuColours=false, backButtonDestination=
                             (
                                 <Link href="/">
                                     <img
-                                        className={ classNames( "duration-300 w-full max-w-[40px] cursor-pointer", showLightBg && "invert")}
+                                        className={ classNames( "duration-300 w-full max-w-[34px] cursor-pointer tablet:max-w-[40px]", showLightBg && "invert")}
                                         src={"/assets/svg/navigation/logo.svg"}
                                         alt="Femi Johnsn"
                                     />    
@@ -54,8 +59,9 @@ const Navigation = ({ isNavDark, invertMenuColours=false, backButtonDestination=
                 <button className={styles["menu-btn"]} onClick={toggleMenu}>
                     <h4 className={
                             classNames(
-                                "text-white mr-[19px] text-base font-light",
-                                showLightBg && "text-primary"
+                                "text-white text-heading-6 font-light duration-150 tablet:text-base",
+                                showLightBg && "text-primary",
+                                showMenu ? "mr-0" : "mr-[19px]"
                             )
                         }
                     >
@@ -84,7 +90,7 @@ const Navigation = ({ isNavDark, invertMenuColours=false, backButtonDestination=
                 }
             >
                 <div className="flex justify-around w-full px-[10%] mt-40">
-                    <div className="block max-w-[379px] w-full">
+                    <div className="hidden max-w-[379px] w-full mr-10 breakpoint-i:mr-0 breakpoint-iv:block">
                         <img
                             className="block w-full max-w-[379px]"
                             src={"/assets/png/navigation/navbar-img.png"}
@@ -93,22 +99,22 @@ const Navigation = ({ isNavDark, invertMenuColours=false, backButtonDestination=
                     </div>
                     <div className={
                             classNames(
-                                "font-body",
+                                "font-body text-right breakpoint-iv:text-left",
                                 isNavDark ? " text-primary" : "text-secondary"
                             )
                         }
                     >
                         <ul className="mb-10">
-                            <li className="text-heading-1 font-semibold mb-8">
+                            <li className="text-heading-2 font-semibold mb-4 tablet:text-heading-1 tablet:mb-8">
                                 <Link href="/">Home</Link>
                             </li>
-                            <li className="text-heading-1 font-semibold mb-8">
+                            <li className="text-heading-2 font-semibold mb-4 tablet:text-heading-1 tablet:mb-8">
                                 <Link href="/photography/all">Work</Link>
                             </li>
-                            <li className="text-heading-1 font-semibold mb-8">
+                            <li className="text-heading-2 font-semibold mb-4 tablet:text-heading-1 tablet:mb-8">
                                 <Link href="/about">About</Link>
                             </li>
-                            <li className="text-heading-1 font-semibold">
+                            <li className="text-heading-2 font-semibold tablet:text-heading-1">
                                 <Link href="/contact">Contact</Link>
                             </li>
                         </ul>

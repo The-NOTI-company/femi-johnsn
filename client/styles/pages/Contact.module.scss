@@ -1,6 +1,6 @@
 .emailText{
-    transition: all 2s;
-    -webkit-transition: all 2s;
+    font-size: clamp(24px, 7.5vw, 110px);
+    width: fit-content;
 
     &:hover{
         -webkit-text-fill-color: #F0F9F1; /* Will override color (regardless of order) */
@@ -8,4 +8,13 @@
         -webkit-text-stroke-color: #050606;
         text-decoration: none;
     }
+}
+
+
+.contactTitle{
+    font-size: clamp(20px, 11vw, 96px);
+}
+
+.formTitle{
+    font-size: clamp(20px, 8vw, 96px);
 }
