@@ -23,7 +23,13 @@ const ProjectsNavigation = ({ isNavDark, invertMenuColours=false, backButtonDest
                 )
             }
         >
-            <div className={ classNames("flex justify-between items-center py-8 px-[8%] mx-auto w-full fixed top-0 z-30 duration-500 ", invertMenuColours &&  "invert", setMixBlend && "mix-blend-difference" )}>
+            <div className={
+                classNames(
+                    "flex justify-between items-center py-8 px-[4.5%] mx-auto w-full fixed top-0 z-30 duration-500 breakpoint-ii:px-[4%] laptop:px-[8%]",
+                    invertMenuColours && "invert",
+                    setMixBlend && "mix-blend-difference"
+                )
+            }>
                 <div>
                     {
                         backButtonDestination ?
@@ -52,8 +58,9 @@ const ProjectsNavigation = ({ isNavDark, invertMenuColours=false, backButtonDest
                 <button className={baseStyles["menu-btn"]} onClick={toggleMenu}>
                     <h4 className={
                             classNames(
-                                "text-white mr-[19px] text-base font-normal",
-                                showLightBg && "text-primary"
+                                "text-white text-heading-6 font-normal duration-150 tablet:text-base",
+                                showLightBg && "text-primary",
+                                showMenu ? "mr-0" : "mr-[19px]"
                             )
                         }
                     >
@@ -85,7 +92,7 @@ const ProjectsNavigation = ({ isNavDark, invertMenuColours=false, backButtonDest
                 <div className="flex w-full h-full justify-end">
                     <div className={
                         classNames(
-                            " w-full h-full px-[6%] pt-52 max-w-[675px] bg-white relative",
+                            " w-full h-full px-[6%] max-w-[675px] bg-white relative pt-40 tablet:pt-52",
                         ) 
                     }>
 
@@ -120,7 +127,7 @@ const ProjectsNavigation = ({ isNavDark, invertMenuColours=false, backButtonDest
                             </ul>
                             <p className="text-base">Femi Johnsn, 2023</p>
                         </div>
-                        <div className="absolute bottom-[400px] right-[200px]">
+                        <div className="absolute bottom-[400px] right-[10px] tablet:right-[200px] max-w-[42px] breakpoint-vi:max-w-[unset]">
                             <img
                                 src={"/assets/svg/navigation/smiley.svg"}
                                 alt="Smiley"
