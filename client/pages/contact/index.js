@@ -8,7 +8,7 @@ export default function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        toast('This service is currently unavailable', {
+        toast('Currently unavailable, send an email instead', {
             icon: "👨‍🍳"
         })
     }
