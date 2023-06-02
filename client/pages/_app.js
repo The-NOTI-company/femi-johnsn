@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Toaster } from 'react-hot-toast'
 import '../styles/globals.css'
 import Lenis from "@studio-freight/lenis";
@@ -6,6 +6,44 @@ import { useRouter } from "next/router";
 
 import * as gtag from "../utils/gtag";
 import Script from "next/script";
+
+import { motion } from 'framer-motion';
+
+
+const AnimationLayout = ({ children }) => {
+  const [isAnimating, setIsAnimating] = useState(false);
+  const router = useRouter();
+  
+  useEffect(() => {
+    const handleRouteChangeStart = () => {
+      setIsAnimating(true);
+    };
+
+    const handleRouteChangeComplete = () => {
+      setIsAnimating(false);
+    };
+
+    router.events.on('routeChangeStart', handleRouteChangeStart);
+    router.events.on('routeChangeComplete', handleRouteChangeComplete);
+
+    return () => {
+      router.events.off('routeChangeStart', handleRouteChangeStart);
+      router.events.off('routeChangeComplete', handleRouteChangeComplete);
+    };
+  }, [router.events]);
+
+  return (
+    <motion.div
+      key={router.asPath}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: isAnimating ? 0 : 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3, delay: 0.03 }}
+    >
+      {children}
+    </motion.div>
+  )
+}
 
 
 function MyApp({ Component, pageProps }) {
@@ -76,7 +114,9 @@ function MyApp({ Component, pageProps }) {
         />
       </>
       <Toaster />
-      <Component {...pageProps} />
+      <AnimationLayout>
+        <Component {...pageProps} />
+      </AnimationLayout>
     </>
   )
 }

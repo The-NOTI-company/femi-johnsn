@@ -1,0 +1,47 @@
+.dreamy-button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+  
+.dreamy-button:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    transform: scale(0.5);
+    filter: blur(10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+  
+.dreamy-button:hover:before {
+    opacity: 1;
+    transform: scale(1);
+}
+  
+@keyframes dreamyEffect {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+}  
