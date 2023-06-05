@@ -2,7 +2,7 @@ import Head from "next/head";
 
 const DOMAIN = "https://www.femijohnsn.com";
 const DEFAULT_OG_IMAGE =
-  "https://res.cloudinary.com/noticompany/image/upload/v1664799323/Projects/Femi%20Johnsn/portfolio_og.jpg";
+  "https://res.cloudinary.com/noticompany/image/upload/v1685887373/Projects/Femi%20Johnsn/pfp.jpg";
 
 export default function SeoHead({
   title = "Welcome",
