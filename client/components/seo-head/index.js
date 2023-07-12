@@ -2,7 +2,7 @@ import Head from "next/head";
 
 const DOMAIN = "https://www.femijohnsn.com";
 const DEFAULT_OG_IMAGE =
-  "https://res.cloudinary.com/noticompany/image/upload/v1689147314/Projects/Femi%20Johnsn/pfp_rszvxu.png";
+  "https://res.cloudinary.com/noticompany/image/upload/v1689149070/Projects/Femi%20Johnsn/thumbnail_ewfmb4.png";
 
 export default function SeoHead({
   title = "Welcome",
@@ -17,7 +17,7 @@ export default function SeoHead({
     <Head>
       <title key="title">{`${title} | ${siteName}`}</title>
       <meta name="description" content={description} />
-      <meta name="keywords" content="photography, femijohnsn, creative, fashion editorial" />
+      <meta name="keywords" content="photography, femijohnsn, creative, fashion editorial, portfolio" />
       <meta key="og_type" property="og:type" content={ogType} />
       <meta key="og_title" property="og:title" content={title} />
       <meta key="og_description" property="og:description" content={description} />
@@ -28,7 +28,7 @@ export default function SeoHead({
       <meta
         key="og_image"
         property="og:image"
-        content={ogImage}
+        content={ogImage ?? DEFAULT_OG_IMAGE}
       />
       <meta
         key="og_image:alt"
