@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Toaster } from 'react-hot-toast'
 import '../styles/globals.css'
-import Lenis from "@studio-freight/lenis";
 import { useRouter } from "next/router";
 
 import * as gtag from "../utils/gtag";
 import Script from "next/script";
 
 import { motion } from 'framer-motion';
+import {LenisProvider} from '../context/lenisContext';
 
 
 const AnimationLayout = ({ children }) => {
@@ -61,35 +61,6 @@ function MyApp({ Component, pageProps }) {
     };
   }, [router.events]);
 
-  useEffect(() => {
-    const lenis = new Lenis({
-      duration: 1.5,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
-    })
-  
-    function raf(time) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
-  
-    requestAnimationFrame(raf)
-  }, []);
-
-  useEffect(() => {
-    const isBrowser = () => typeof window !== 'undefined';
-
-    function scrollToTop() {
-      if (!isBrowser()) return;
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    router.events.on('routeChangeComplete', scrollToTop);
-
-    return () => {
-      router.events.off("routeChangeComplete", scrollToTop);
-    };
-
-  },[router.events])
 
   return (
     <>
@@ -114,9 +85,11 @@ function MyApp({ Component, pageProps }) {
         />
       </>
       <Toaster />
-      <AnimationLayout>
-        <Component {...pageProps} />
-      </AnimationLayout>
+      <LenisProvider>
+        <AnimationLayout>
+          <Component {...pageProps} />
+        </AnimationLayout>
+      </LenisProvider>
     </>
   )
 }

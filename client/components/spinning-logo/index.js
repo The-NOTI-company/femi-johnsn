@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link"
+import Link from "../link"
 import styles from '../../styles/components/SpinningLogo.module.scss'
 import { classNames } from "../../utils/classNames"
 
