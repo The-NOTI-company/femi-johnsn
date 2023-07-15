@@ -20,14 +20,18 @@ export default function SeoHead({
       <meta name="keywords" content="photography, femijohnsn, creative, fashion editorial, portfolio" />
       <meta key="og_type" property="og:type" content={ogType} />
       <meta key="og_title" property="og:title" content={title} />
-      <meta key="og_description" property="og:description" content={description} />
+      <meta
+        key="og_description"
+        property="og:description"
+        content={description}
+      />
       <meta key="og_locale" property="og:locale" content="en_IE" />
       <meta key="og_site_name" property="og:site_name" content={siteName} />
-      <meta key="og_url" property="og:url" content={canonical} />
+      <meta key="og_url" property="og:url" content={canonical ?? DOMAIN} />
       <meta key="og_site_name" property="og:site_name" content={siteName} />
       <meta
         key="og_image"
-        property="og:image"
+        property="og:image:secure_url"
         content={ogImage ?? DEFAULT_OG_IMAGE}
       />
       <meta
@@ -45,30 +49,23 @@ export default function SeoHead({
         name="twitter:card"
         content="summary_large_image"
       />
-      <meta 
-        key="twitter:site" 
-        name="twitter:site" 
-        content={twitterHandle} 
-      />
+      <meta key="twitter:site" name="twitter:site" content={twitterHandle} />
       <meta
         key="twitter:creator"
         name="twitter:creator"
         content={twitterHandle}
       />
-      <meta 
-        key="twitter:title" 
-        property="twitter:title" 
-        content={title} 
-      />
+      <meta key="twitter:title" property="twitter:title" content={title} />
       <meta
         key="twitter:description"
         property="twitter:description"
         content={description}
       />
 
-      <link rel="canonical" href={canonical} />
+      <link rel="canonical" href={canonical ?? DOMAIN} />
 
       <link rel="shortcut icon" href="/favicon.ico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
   );
 }

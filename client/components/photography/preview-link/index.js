@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { classNames } from "../../../utils/classNames"
-import Link from "next/link"
+import Link from "../../link"
 
 const PreviewLink = ({ picData, containerClassName="", imgClassName="" }) => {
     const { slug, title, initialImg, hoverImg, roles, link, redirect } = picData
