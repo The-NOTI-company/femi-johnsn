@@ -12,14 +12,14 @@ function Credits({ muse, makeup, stylists, creativeAgency, assist }) {
                         {
                             data?.map((entry, idx) => {
                                 return (
-                                    <>
-                                        <a className="duration-150 hover:text-accent" href={entry.contactLink} target="_blank" key={idx} rel="noreferrer">
+                                    <span key={idx}>
+                                        <a className="duration-150 hover:text-accent" href={entry.contactLink} target="_blank" rel="noreferrer">
                                             { entry.name }
                                         </a>
                                         {
                                             data.length !== idx + 1 ? (<span> | </span>) : null
                                         }
-                                    </>
+                                    </span>
                                 )
                             }
                         )}

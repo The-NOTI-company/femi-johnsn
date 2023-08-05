@@ -51,10 +51,9 @@ export default function Home() {
               <h3 className='justify-end'>femi johnsn  | All rights reserved  |  2023</h3>
             </footer>
           </div>
-          <div className='max-w-[60%] opacity-10 w-full h-full absolute right-0 z-0 bottom-0 tablet:max-w-[40%] breakpoint-iii:opacity-100'>
+          <div className='max-w-[60%] opacity-20 w-full h-full absolute right-0 z-0 bottom-0 tablet:max-w-[40%] breakpoint-iii:opacity-100'>
             <ImageSlider
               pictures={homepageImages}
-              iterations={2}
             />
           </div>
           <a href="https://www.designnominees.com/sites/femi-johnsn" title="Design Nominees" style={{width:'70px', height:'130px', position:'fixed', top:'200px', right:0, zIndex:99999, textIndent:-'9999px', background: `url(${'http://www.designnominees.com/ribbons/designnominees-ribbon-sotd-white-right.png'}) no-repeat` }} target="_blank" rel="noreferrer"></a>

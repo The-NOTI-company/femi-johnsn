@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from '../../styles/components/ImageSlider.module.scss'
 
-function ImageSlider({ pictures, iterations }) {
+function ImageSlider({ pictures }) {
 
-    function replicateArray(array, n) {
-        var arrays = Array.apply(null, new Array(n));
-        arrays = arrays.map(function () { return array; });
-        return [].concat.apply([], arrays);
-    }
+    // function replicateArray(array, n) {
+    //     var arrays = Array.apply(null, new Array(n));
+    //     arrays = arrays.map(function () { return array; });
+    //     return [].concat.apply([], arrays);
+    // }
 
     const imgArray = pictures;
 
