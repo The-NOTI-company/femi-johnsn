@@ -48,7 +48,7 @@ export default function Home() {
             </main>
             <footer className="flex justify-between text-white mt-[50px] w-full">
               <div></div>
-              <h3 className='justify-end'>femi johnsn  | All rights reserved  |  2023</h3>
+              <h3 className='justify-end'>femi johnsn  | All rights reserved  |  {new Date().getFullYear()}</h3>
             </footer>
           </div>
           <div className='max-w-[60%] opacity-20 w-full h-full absolute right-0 z-0 bottom-0 tablet:max-w-[40%] breakpoint-iii:opacity-100'>
