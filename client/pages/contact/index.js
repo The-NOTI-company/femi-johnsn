@@ -3,14 +3,47 @@ import { toast } from "react-hot-toast";
 import DefaultLayout from "../../components/layouts/default-layout";
 import styles from '../../styles/pages/Contact.module.scss'
 import { classNames } from "../../utils/classNames";
+import { useEffect, useRef } from "react";
 
 export default function Contact() {
+    const contactForm = useRef(null)
+
+    const responseLink = "https://docs.google.com/forms/d/e/1FAIpQLSdKd4sklEMANPar4noW06nBj4BKXDAGZEPGmzcFzLNVDG0G1Q/formResponse"
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        toast('Currently unavailable, send an email instead', {
-            icon: "👨‍🍳"
+        const contactName = e.target.elements["entry.364101381"].value
+        const contactEmail = e.target.elements["entry.1419107623"].value
+        const description = e.target.elements["entry.653997729"].value
+
+        toast(`You'll hear from me soon, ${contactName}`, {
+            icon: "💚"
         })
+
+        fetch(responseLink, {
+            method: 'post',
+            body : JSON.stringify({
+                "entry.364101381": contactName,
+                "entry.1419107623": contactEmail,
+                "entry.653997729": description
+            }),
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            }
+          })
+            .then(() => {
+                toast(`You'll hear from me soon, ${contactName}`, {
+                    icon: "💚"
+                })
+            })
+            .catch(function(error) {
+                toast(`An error occurred: ${error}`, {
+                    icon: "💚"
+                })
+            });
+       
+        contactForm.current.reset()
     }
 
     return (
@@ -73,26 +106,26 @@ export default function Contact() {
                 </section>
                 <section className="bg-primary font-body px-[4%] pt-24 tablet:px-[100px]">
                     <h3 className={classNames("tracking-wide text-secondary  font-semibold", styles.formTitle)}>Hello,</h3>
-                    <form className="flex flex-col">
+                    <form ref={contactForm} action={responseLink} target="_blank" className="flex flex-col">
                         <div className="flex flex-col w-full desktop:flex-row ">
                             <h2 className={classNames("tracking-wide text-secondary uppercase font-semibold w-full desktop:w-2/5", styles.formTitle)}>My name is </h2>
                             <div className="border-b-2 border-secondary flex flex-col pt-11 pb-8 w-full desktop:w-3/5 desktop:pb-0">
-                                <input type="text" placeholder="Your name goes here." className="text-base-semi-bold bg-transparent self-end h-full w-full text-secondary text-right"/>
+                                <input name="entry.364101381" required type="text" placeholder="Your name goes here." className="text-base-semi-bold bg-transparent self-end h-full w-full text-secondary text-right"/>
                             </div>
                         </div>
                         <div className="flex flex-col w-full my-5 desktop:flex-row">
                             <h2 className={classNames("tracking-wide text-secondary uppercase font-semibold w-full desktop:w-2/5", styles.formTitle)}>My email is </h2>
                             <div className="border-b-2 border-secondary flex flex-col pt-11 pb-8 w-full desktop:w-3/5 desktop:pb-0">
-                                <input type="email" placeholder="Your email goes here." className="text-base-semi-bold bg-transparent self-end h-full w-full text-secondary text-right"/>
+                                <input name="entry.1419107623" required type="email" placeholder="Your email goes here." className="text-base-semi-bold bg-transparent self-end h-full w-full text-secondary text-right"/>
                             </div>
                         </div>
                         <div className="flex flex-col w-full desktop:flex-row">
                             <h2 className={classNames("tracking-wide text-secondary uppercase font-semibold w-full desktop:w-2/5", styles.formTitle)}>I want to</h2>
                             <div className="border-b-2 border-secondary flex flex-col pt-11 pb-8 w-full desktop:w-3/5 desktop:pb-0">
-                                <input type="text" placeholder="Description of shoot." className="text-base-semi-bold bg-transparent self-end h-full w-full text-secondary text-right"/>
+                                <input name="entry.653997729" required type="text" placeholder="Description of shoot." className="text-base-semi-bold bg-transparent self-end h-full w-full text-secondary text-right"/>
                             </div>
                         </div>
-                        <button onClick={handleSubmit} className="rounded-full uppercase border-2 border-accent w-60 h-60 self-center mt-[75px] mb-24 group duration-300 hover:bg-accent">
+                        <button type="submit" className="rounded-full uppercase border-2 border-accent w-60 h-60 self-center mt-[75px] mb-24 group duration-300 hover:bg-accent">
                             <span className="text-accent text-heading-4 duration-300 group-hover:text-secondary">Send</span>
                         </button>
                     </form>
