@@ -12,6 +12,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  height: auto;
   min-height: 100%;
 }
 
@@ -30,7 +31,7 @@ a {
 
 /* Lenis */
 html.lenis {
-  height: 100%;
+  height: auto;
 }
 
 .lenis.lenis-smooth {
