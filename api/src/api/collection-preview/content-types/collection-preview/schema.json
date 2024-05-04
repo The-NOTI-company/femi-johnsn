@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "collection_previews",
+  "info": {
+    "singularName": "collection-preview",
+    "pluralName": "collection-previews",
+    "displayName": "Collection Preview",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "previewImg": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "hoverImg": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "roles": {
+      "type": "customField",
+      "options": [
+        "Creative Direction:creative-direction",
+        "Photography:photography",
+        "Styling:styling"
+      ],
+      "customField": "plugin::multi-select.multi-select",
+      "required": true
+    },
+    "shoot_type": {
+      "type": "enumeration",
+      "enum": [
+        "Outdoor",
+        "Indoor"
+      ],
+      "required": true
+    }
+  }
+}

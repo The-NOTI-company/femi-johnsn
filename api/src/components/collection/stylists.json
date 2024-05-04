@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_collection_stylists",
+  "info": {
+    "displayName": "Stylists"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "contact": {
+      "type": "string"
+    }
+  }
+}

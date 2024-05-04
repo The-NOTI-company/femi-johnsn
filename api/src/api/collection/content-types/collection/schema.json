@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "collections",
+  "info": {
+    "singularName": "collection",
+    "pluralName": "collections",
+    "displayName": "Collection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "quote_title": {
+      "type": "string",
+      "required": true
+    },
+    "images": {
+      "displayName": "images",
+      "type": "component",
+      "repeatable": true,
+      "component": "collection.images",
+      "required": true
+    },
+    "roles": {
+      "type": "customField",
+      "options": [
+        "Creative Direction:creative-direction",
+        "Photography:photography",
+        "Styling:styling"
+      ],
+      "customField": "plugin::multi-select.multi-select",
+      "required": true
+    },
+    "stylists": {
+      "type": "component",
+      "repeatable": true,
+      "component": "collection.stylists"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "quote_desc": {
+      "type": "richtext"
+    },
+    "shoot_type": {
+      "type": "enumeration",
+      "enum": [
+        "Outdoor",
+        "Indoor"
+      ],
+      "required": true
+    },
+    "muse": {
+      "type": "component",
+      "repeatable": true,
+      "component": "collection.stylists"
+    },
+    "agency": {
+      "type": "component",
+      "repeatable": true,
+      "component": "collection.stylists"
+    },
+    "makeup_artist": {
+      "type": "component",
+      "repeatable": true,
+      "component": "collection.stylists"
+    }
+  }
+}
